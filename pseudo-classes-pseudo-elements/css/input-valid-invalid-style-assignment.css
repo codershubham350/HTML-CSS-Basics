@@ -1,0 +1,44 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    padding: 3em;
+}
+
+.myForm {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #111;
+    border-radius: 10px;
+    padding: 15px 0;
+}
+
+label {
+    display: flex;
+    margin: 5px 30px;
+}
+
+input {
+    padding: 6px;
+    margin: 2px 30px 15px;
+    border-radius: 5px;
+    width: 50%;
+    font-size: 1.25em;
+}
+
+/* :valid pseudo class is used to select any input or form
+element whose content validates successfully */
+
+/* :invalid pseudo class selects the elements whose contents fail 
+to validate */
+
+input:invalid {
+    background-color: orangered;
+    color: #fff;
+    border-color: brown;
+}
+
+input:valid {
+    border-color: #111;
+
+}

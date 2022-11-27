@@ -1,0 +1,41 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+
+h2{
+    text-align: center;
+    font-size: 2em;
+    color: goldenrod;
+}
+
+label{
+    color:burlywood;
+    font-size: 1.5em;
+    display: inline-block;
+}
+
+form{
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid burlywood;
+    border-radius: 1em;
+}
+
+form li+li{
+    margin-top: 1em;
+}
+
+ul {
+    list-style: none;
+}
+input{
+    font-size: 1.2em;
+}
+
+input:focus{
+    background-color: burlywood;
+}

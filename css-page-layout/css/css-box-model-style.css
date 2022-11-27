@@ -1,0 +1,53 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    height: 100%;
+}
+
+.container{
+    font-size: 4rem;
+    text-align: center;
+    color: goldenrod;
+}
+
+.myHeading{
+    margin: 1rem;
+    padding: 0.5rem;
+    font-size: 3rem;
+    color: dodgerblue;
+}
+
+.topic{
+    font-size: 2rem;
+    color: orangered;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+/* Every element inside CSS is treated as a box, known as
+CSS Box Model i.e. CSS treats every element as a "Box" */
+
+/* content, padding, border and margin these are the properties
+available inside CSS Box Model */
+
+/* 1) Content-> It is the area where our content is displayed
+Ex:- Image, text or other type of content
+
+In order to modify content dimensions we have properties
+like height and width
+
+2) Padding-> Which sits between the content and the border 
+white space. It is applied to all to all sides of the box
+i.e, top, bottom, left, right
+
+3) Border-> Which is the area that wraps the content and 
+the padding. Remember, every element has its own border,
+we just have to switch it on and off by using border property.
+
+4) Margin-> Margin is defined as the distance between two
+ elements. It wraps the border padding and the content.
+
+ Note:- Margin does not have any background color & is
+ completely transparent.
+*/

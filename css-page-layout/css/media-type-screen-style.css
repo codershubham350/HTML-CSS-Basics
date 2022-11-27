@@ -1,0 +1,38 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+/* By giving the @media screen you can target various devices
+"screen" */
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.column{
+    background-color: dodgerblue;
+    border-radius: 15px;
+    margin: 12px;
+    padding: 14px;
+}
+
+@media screen and (orientation: portrait) {
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .column {
+            background-color: darkgreen;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+}
+
+/* The above approach can also be achieved by
+@media screen and (max-width: 980px) and (max-width:450px) and (orientation: portrait)
+
+*/

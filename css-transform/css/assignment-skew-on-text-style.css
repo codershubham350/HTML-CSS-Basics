@@ -1,0 +1,31 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+
+h1{
+    font-size: 3rem;
+    color: gold;
+    padding: 2rem 4rem;
+    background-color: midnightblue;
+    transform: rotate(-15deg) skew(-15deg);
+}
+
+/*In order to make styles properly work on span we need to use 
+block element and for that we need to convert span to inline-block element*/
+
+span{
+    display: inline-block;
+    letter-spacing: -0.2rem;
+    text-shadow: 10px 15px 5px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+}
+
+span:hover{
+    letter-spacing: 0rem;
+    cursor: pointer;
+}

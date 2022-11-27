@@ -1,0 +1,79 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+h2{
+    text-align: center;
+    font-size: 35px;
+    color: goldenrod;
+}
+
+.myForm{
+    border: 2px solid goldenrod;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.col{
+    padding: 0 10px;
+    margin: 10px 0;
+}
+
+.form-control{
+    border: none;
+    padding: 10px 25px;
+    background-color: #222;
+    margin: auto;
+    width: 75%;
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+label{
+    display: block;
+    color: burlywood;
+    margin-bottom: 5px;    
+}
+
+.submit_btn{
+    text-align: center;
+    margin: 20px;    
+}
+
+.btn{
+    padding: 5px 20px;
+    background-color: chartreuse;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 900px){
+    .row{
+        grid-template-columns: auto auto;
+    }
+    body, .form-control, .btn{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .row {
+            grid-template-columns: auto;
+        }
+    .col{
+        padding: 0;
+        margin: 10px 0;
+    }
+}

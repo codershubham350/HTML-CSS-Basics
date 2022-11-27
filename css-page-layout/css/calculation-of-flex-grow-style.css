@@ -1,0 +1,77 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    height: 100%;
+    width: 600px;
+}
+
+.itemA {
+    background-color: coral;
+    flex-grow: 1;    
+}
+
+.itemB {
+    background-color: dodgerblue; 
+    flex-grow: 3;
+}
+
+.itemC {
+     background-color: crimson;
+     flex-grow: 2;
+}
+
+.itemD {
+    background-color: seagreen;
+    flex-grow: 4;
+}
+
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+    border: solid 2px;
+    height: 30rem;
+    width: 700px;
+}
+
+div[class^="item"] {
+   width: 150px;
+   padding: 2rem 0;
+}
+
+/* In order to calculate the flex-grow how it works
+
+((single element flex-grow(for 1 item/element) / total flex-grow) x available space) + child width
+
+Here, suppose we  take .itemB{flex-grow:3} so it will be
+calculated as 
+
+((.itemB{}/.itemA{}+.itemB{}+.itemC{}+.itemD{}) x available space) + child width
+
+i.e,
+3/1+3+2+4 = 3/10
+
+And available space is calculated as
+
+Width of the parent element - Total width of the child element = Available space
+
+Here, it comes as 
+Width of the parent element= 700px(for parent element)
+Total width of the child element = 4(child elements) x 150px(width of each child element)
+                                 = 600px
+    
+    Available space = 700px - 600px = 100px
+
+    so Here, ((single element flex-grow(for 1 item/element) / total flex-grow) x available space) + child width
+
+    = 3/1+3+2+4= (3/10 x 100) + 150px = 30 + 150 = 180px(in our case)
+
+    now for every child lets suppose
+
+.itemA = (1/10 x 100) + 150 = 160px
+.itemB=(3/10 x 100)+150=180px
+.itemC=(2/10 x 100)+150=170px
+.itemD=(4/10 x 100)+150=190px
+
+this would be the width for each child element.
+*/

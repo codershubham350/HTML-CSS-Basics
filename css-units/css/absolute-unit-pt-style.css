@@ -1,0 +1,35 @@
+/* In CSS there are two types of units
+1) Absolute units(fixed units) :- px, pt, cm, mm, in, pc, etc.
+2) Relative units :- em, rem, %, ex, ch. vw, vh, vmin/vmax, etc. */
+
+/*Point(pt) is a unit of measurement used for real life ink on
+paper typography*/
+
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: dodgerblue;
+}
+
+/*72pt (points) = 1inch (inches)
+1 inch here is on a ruler not on a screen*/
+
+/*For the cross-browser and cross-platform results
+-for printing the content on pages, defining
+the point unit can be considered as a better option*/
+
+/*Pixel sizes are more accurate on screen &
+point sizes are more accurate on paper*/
+
+.pixel-unit{
+    font-size: 30px;
+    color: goldenrod;
+    border: solid 4px;
+    padding: 40px;
+}
+
+.point-unit{
+    font-size: 30pt; /*Bigger unit than pixels*/
+    border:solid 4pt;
+    padding:40pt;
+}

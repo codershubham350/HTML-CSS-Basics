@@ -1,0 +1,33 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: brown;
+    font-size: 1.5em;
+}
+
+span {
+    color: beige;
+    padding: 15px;
+     display: inline-block; 
+}
+
+/* applies styles to only first character */
+/* ::first-letter also works for only elements having
+display:block, display:inline-block, display:table-caption
+display:table-cell */
+
+/* Note: If we have both the properties i.e. ::first-letter and
+::first-line on an element then ::first-letter will inherit
+the styles form ::first-line, but styles in ::first-letter will
+be overridden when styles applied on ::first-line*/
+
+span::first-letter{
+    text-transform: uppercase;
+    font-size: 350%;
+    padding: 0 5px;
+}
+
+span::first-line{
+    text-transform: lowercase;
+    font-size: 0.5em;
+}

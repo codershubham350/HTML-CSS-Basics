@@ -1,0 +1,15 @@
+body{
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+article, p, .myDiv{
+    font-size: 1.25em;
+    font-weight: bold;
+    line-height: 2em;
+    padding: 10px;
+    color: #00ffaa;
+}
+hr{
+    border: dashed 2px #999;
+}

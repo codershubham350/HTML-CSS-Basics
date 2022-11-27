@@ -1,0 +1,83 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    height: 100%;
+    width: 600px;
+}
+ 
+/* The display property is used when you want to determine,
+how that rectangular box should be treated, like
+display: inline/ display: block
+
+The default display value of most of the elements
+is either "block" or "inline" */
+
+.firstDiv{
+    width: 10rem;
+    height: 10rem;
+    background-color: darkgoldenrod;
+    visibility: hidden;
+}
+
+.secondDiv {
+    width: 10rem;
+        height: 10rem;
+    background-color: chocolate;
+    display: none;
+}
+
+.thirdDiv {
+    width: 10rem;
+    height: 10rem;
+    background-color: saddlebrown;
+}
+
+div{
+    display: inline-block;
+}
+
+/* By default the display value of div{}
+is "block",
+
+The "block" elements will take the entire width of the body
+in case width is not explicitly specified, and will always
+start from the new line*/
+
+/* display: inline; will align items in a single line,
+and side-by-side to each element in a single line.
+
+Also "width" and "height" of inline elements are ignored
+as they are determined by the content they hold.
+*/
+
+/* There are some cases where "inline" and "block"
+will not be sufficient for web designing, so we have
+another property called "inline-block" so "inline-block"
+comes with both the functionalities such as with 'inline'
+property you can make align items in a single line and 
+with 'block' property we can tweak there respective
+"height" and "width" of elements.*/
+
+/* In general, 
+display: inline-block; 'width & height applied properly'
+display: inline; 'width & height is ignored'
+*/
+
+/* display property also alows you to remove an element
+from the view by using display: none; and it will remove 
+the element from the DOM itself.
+
+There is always a bit confusion between display: none; and
+visibility: hidden; so display: none will remove the element
+from the DOM tree and the sibling element will take it's
+space while with visibility: hidden; the element will be 
+hidden from the browser but it will still be there in the DOM
+tree.
+*/
+
+/* When we specify "display: inline" to any element, or even
+if the element is an inline element by nature, giving them
+width & height won't affect them because the width & height
+of any inline element is determined by the content they
+hold inside.*/

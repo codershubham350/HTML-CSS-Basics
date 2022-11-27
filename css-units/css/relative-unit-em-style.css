@@ -1,0 +1,74 @@
+/* In CSS there are two types of units
+1) Absolute units(fixed units) :- px, pt, cm, mm, in, pc, etc.
+2) Relative units :- em, rem, %, ex, ch. vw, vh, vmin/vmax, etc. */
+
+/*Ephemeral(em) unit can be used in any situation like setting
+up the font size, element length like width, padding, margin,
+height etc.*/
+
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+p{
+    font-size: 1.25em;
+    border: solid 4px salmon;
+    text-align: justify;
+    padding: 2em;
+}
+
+div{
+    font-size: 20px;
+}
+
+/*1 em = 100%
+  1 em = 16px
+*/
+
+/*When we give font-size: 1.5em; i.e, when we define
+size using 'em' unit then the size of element will always
+relate to the size given inside the parent element
+
+It means-> The em's unit is always relative to their parent.
+Ex:- div {font-size: 1.2em;} x p{font-size: 1.5em;}
+1.2em x 1.5em = 1.8em
+
+In case of padding
+Ex:- div {font-size: 1.2em;} x p{font-size: 1.5em; padding:2.5em;}
+1.2em x 1.5em = 1.8em (font-size)
+1.8em(font-size) x 2.5em(padding) = 4.5em(padding)
+4.5em x 16px = 72px(padding)
+
+In recent case of padding
+Ex:- div {font-size: 20px;} x p{font-size: 1.25em; padding:2em;}
+1.25em x 20px = 25px (font-size)
+25px(font-size) x 2em(padding) = 50px(padding)
+*/
+
+.parent{
+    font-size: 20px;
+}
+
+.child{
+    font-size: 2em;
+}
+
+/*Note:- In case of 'em' we can observe an compounding effect,
+if the parent element and the child element are nested and 
+we give font size to parent element then the font size will get
+multiplied for each nested child of the parent element
+Ex:- .parent{font-size:20px} .child{font-size:2em}
+20px x 2em -> 40px (1st nested child)
+40px(Result of 1st nested child) x 20px(of parent font-size)-> 
+800px(2nd nested child[sub-child element])
+*/
+
+/*We can avoid compoundind effect using 'rem' unit
+instead of 'em'*/
+
+/*Note:- When we declare an 'em' length unit on
+padding, margin, width or any other properties apart
+from the font-size on the parent element, it dosen't affect
+the width, padding or margin of the child element.*/

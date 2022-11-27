@@ -1,0 +1,33 @@
+body {
+    background-color: #333;
+}
+
+/*'left' and 'right' property can only be apllied to element
+only when element is having 'position' property*/
+div{
+    width: 200px;
+    height: 200px;
+    margin-top: 120px;
+    padding: 110px;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left:0;
+    right:0;
+    background: linear-gradient(
+        90deg, hsl(0,100%,50%),
+        hsl(30,100%,50%),
+        hsl(60,100%,50%),
+        hsl(90, 100%, 50%),
+        hsl(120, 100%, 50%),
+        hsl(150, 100%, 50%),
+        hsl(180, 100%, 50%),
+        hsl(210, 100%, 50%),
+        hsl(240, 100%, 50%),
+        hsl(270, 100%, 50%),
+        hsl(300, 100%, 50%),
+        hsl(330, 100%, 50%),
+        hsl(0, 100%, 50%)
+    );
+}

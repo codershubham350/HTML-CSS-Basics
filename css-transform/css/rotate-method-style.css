@@ -1,0 +1,51 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+/* rotate() method is used for rotating an element to a given
+degreei.e, it rotates an element based on the angle provide
+as an argument. It rotates an element in a 2D spacei.e, in
+X and Y plane , the rotating is clockwise it starts from 0°
+and goes till 360°*/
+
+.transform-2d {
+    background-color: brown;
+    padding: 25px;
+    margin: 15px 0 100px;
+    width: 200px;
+    transform: translateX(40px) translateY(40px);
+   /* rotate(-0.9turn);*/
+}
+
+.transform-3d {
+    background-color: darkgreen;
+    padding: 25px;
+    margin: 15px 0 0 100px;
+    width: 200px;
+    transform: perspective(200px) translate3d(10px, 10px, 20px)
+    rotate3d(1,-1,1, 30deg);
+}
+
+/* Ex:- transform: translateX(40px) translateY(40px) rotate(25deg);
+will rotate the element/object by 25° degrees we can also
+define rotation in terms of radian, turn. We can also give
+negative values to them as well and we have seperate properties
+also available i.e, rotateX(), rotateY(), rotateZ() which are
+used for 3D transformation
+
+Ex:- transform: perspective(200px) translate3d(10px, 10px, 20px) rotateX(40deg) rotateY(30deg) rotateZ(15deg);
+
+we have a shorthand syntax which is rotate3d() in order to mention
+x-axis, y-axis, z-axis and degrees of rotation. 
+rotate3d() take numbers instead of length. If we define numbers
+in +ve angle value then it will rotate in the clockwise direction,
+else if we define the angle in the -ve direction value then it
+will define the angle in the counter-clockwise direction.
+
+Ex:- transform: perspective(200px) translate3d(10px, 10px, 20px) rotate3d(1, 0, 0, 30deg);
+
+Note:- The values for rotation should be kept between
+"0" and "1". like  rotate3d(1, -1, 0, 30deg);
+*/

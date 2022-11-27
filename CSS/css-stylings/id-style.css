@@ -1,0 +1,12 @@
+body{
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+#myId{
+    border: solid 2px #3399FF;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.25em;
+    color: #ff1482
+}

@@ -1,0 +1,74 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+/* animation-direction allow us to control animation in 
+directions such as forward, backward, to-and-fro*/
+
+.elem{
+    width: 100px;
+    height: 100px;
+    margin: 100px 50px;
+    border-radius: 50%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: goldenrod;
+    /* animation-name: zigzag;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; */
+    animation: zigzag 3s alternate infinite;
+}
+
+@keyframes zigzag {
+    0%{
+        left: 0;
+        top: 0;
+    }
+    15%{
+        left: 60px;
+        top: -50px;
+    }
+    30%{
+        left: 120px;
+        top: 0;
+    }
+    45%{
+        left: 180px;
+        top: -50px;
+    }
+    60%{
+        left: 240px;
+        top:  0px;
+    }
+    75%{
+        left: 300px;
+        top: -50px;
+    }
+    100%{
+        left: 360px;
+        top:  0px;
+    }
+}
+
+/*  animation-direction: normal; // it is the default value
+
+If we do not give any value to animation-direction then 
+by default it is set to "normal" and the animations
+plays forward
+
+animation-direction: initial; // works same as normal
+
+animation-direction: reverse; // animations plays in reverse order
+
+animation-direction: alternate; // alternates between forward and reverse direction
+i.e, the animation is played forward first and then backwards.
+
+animation-direction: alternate-reverse; //it is the opposite of alternate
+i.e, the animation is played backward first and then forward.
+
+Shorthand is: animation: zigzag 3s alternate infinite;
+*/

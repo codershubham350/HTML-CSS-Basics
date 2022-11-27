@@ -1,0 +1,128 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+/* animation-iteration-count determines how many times 
+animation sequence will be repeated/loops before stopping.
+
+Ex: animation-iteration-count: 4;
+If iteration is finite than animation will
+stop after ceratin diration.
+
+animation-iteration-count property is used to repeat
+the animation cycle.
+*/
+
+/* If the animation-iteration-count is not specified,
+the animation cycle is executed only once.
+
+If the animation-iteration-count is 0 it will prevent
+the animation.
+
+We can also define value in terms of decimal value in that case
+animation cycle will stop before completing the cycle.
+
+Ex:- animation-iteration-count: 2.3;
+*/
+
+img{
+    position: relative;
+    width: 150px;
+    margin: 35px;
+    animation-name: myAnimation, scale, rotate;
+    animation-duration: 3s, 3s, 3s;
+    animation-iteration-count: infinite, infinite, infinite;
+    /*here order is not necessary*/
+  /*  animation: myAnimation 3s infinite; */
+    animation-timing-function: linear;
+}
+
+@keyframes myAnimation {
+    0%{
+        left: 0px;
+        top: 150px;
+        animation-timing-function: ease-in;
+    }
+    20%{
+        left: 125px;
+        top: 50px;
+    }
+    50%{
+        left: 250px;
+        top: 150px;
+    }
+    80%{
+        left: 125px;
+        top: 250px;
+    }
+    100%{
+        left: 0px;
+        top: 150px;
+        animation-timing-function: ease-out;
+    }
+}
+
+/* animation-iteration-count also have keyword values
+like: initial, inherit, infinite.
+
+Where, animation-iteration-count: initial; // set the default value to 1
+animation-iteration-count: initial; // inherit the value from it's parent element
+animation-iteration-count: infinite; // Repeats the animation infinitely and most commonly used value
+*/
+
+/* In animation-iteration-count multiple iteration count
+values allows to assign different iterations counts for different
+animations.*/
+
+@keyframes scale {
+    0%{
+        transform: scale(0.5);
+        width: 100px;
+    }
+    20%{
+        width: 150px;
+    }
+    50%{
+        transform: scale(2);
+        width: 300px;
+    }
+    80%{
+        width: 150px;
+    }
+    100%{
+        transform: scale(0.5);
+        width: 100px;
+    }
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+        animation-timing-function: ease-in;
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(720deg);
+        animation-timing-function: ease-out;
+    }
+    
+}
+
+/* We can also define multiple animation properties
+to the element
+
+Ex:-
+img{
+    animation-name: myAnimation, scale, rotate;
+    animation-duration: 3s, 3s, 3s;
+    animation-iteration-count: infinite, infinite, infinite;
+
+}
+
+Multiple names, duration & iteration count values execute in the
+orderwise manner.
+*/

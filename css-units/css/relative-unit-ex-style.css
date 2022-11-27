@@ -1,0 +1,46 @@
+/* In CSS there are two types of units
+1) Absolute units(fixed units) :- px, pt, cm, mm, in, pc, etc.
+2) Relative units :- em, rem, %, ex, ch. vw, vh, vmin/vmax, etc. */
+
+/*X(ex) x-height of the curent font is half of one em
+and equals around 6px*/
+
+body {
+    background-color: #333;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    color: salmon;
+}
+
+/* The x-height is the height of the lowercase letter height.
+   The x-height depends on the font family.
+*/
+
+/* 1ex = 6px*/
+
+/*In the typographic dimension of design, the height of
+letters has important spatial relationships to the rest
+of the elements*/
+
+/*Like the 'em' & 'rem', 'ex' unit also relies on the
+current font & it's size.*/
+
+/*Unlike the 'em' & 'rem', 'ex' unit also relies on
+the font family based on font specific measures.*/
+
+.x-height{
+    font-size: 9ex;
+}
+
+.pixel{
+    font-size: 54px;
+}
+
+/*In above styling views we can predict the difference easily
+irrespective of the font values are same in their own parameters
+that is because the 'ex' value is created using the font specific
+measures, as it is highly dependent on the font-family*/
+
+/*In case no font-family is provided then the html will load
+on it's own font family i.e. 'Times New Roman'*/
+
+/*'ex' units are rarely used in front-end development*/

@@ -1,0 +1,110 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+/* matrix() function is used for projecting linear transformations
+and displaying 3D images on a 2D screen
+
+so, matrix() is used for linear transformations
+and matrix3d() is used for projecting 3D images.
+
+matrix() have 4 build in functions i.e,
+rotate(), scale(), translate() and skew().
+
+It takes 6 parameters and syntax is as below:
+matrix(a, b, c, d, tx, ty) which is 
+
+matrix(sclaeX(), skewY(), skewX(), sclaeY(), translateX(), translateY())
+*/
+
+div{
+    width: 300px;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 25px;
+    margin: 20px;
+    background-color: #2d2d2d;
+    border: solid 1px #111;
+}
+
+div#myDiv1{
+    transform: matrix(1, -0.3, 0, 1, 0,20);
+}
+
+/* In above exapmple:- 
+div#myDiv1 {transform: matrix(1, -0.3, 0, 1, 0, 20);}
+                              -------------  -----
+                         liner transformation Translation/Movement
+
+div#myDiv1 {transform: matrix(a, b, c, d, tx, ty);}
+first 4 values i.e, a,b,c,d displays linear transformation
+and the last 2 values i.e, tx, ty describes the Translation/Movement
+applied on x-axis and y-axis
+*/
+
+div#myDiv2{
+    /* transform: matrix3d(
+               1, 0.1, 0, 0.001,
+               0,   1, 0, 0.002,
+               1,   1, 1,     0,
+               0,   0, 0,     1 
+
+    ); */
+    transform: rotate3d(2, 2, -1, 45deg);
+}
+
+/* matrix3d() comprises of all 3d transform functions
+i.e,  rotateX(), rotateY(), rotateZ(), translateX(),
+translateY(), translateZ(), scaleX(), scaleY(), scaleZ()
+
+It takes upto 16 parameters described in column major order
+which creates a 4x4 matrix
+Ex:-
+div#myDiv2 {
+    transform: matrix3d(
+            1, 0.1, 0, 0.001,
+            0,   1, 0, 0.002,
+            1,   1, 1,     0,
+            0,   0, 0,     1
+    );
+}
+
+Here firt 12 values are for linear transformations and the
+last 4 values are for translations
+
+   transform: matrix3d(
+            a1, b1, c1, d1,
+            a2, b2, c2, d2,
+            a3, b3, c3, d3,
+            a4, b4, c4, d4,
+    );
+
+     transform: matrix3d(
+            a1, scaleX      b1, skewY on Z  c1, skewZ on Y   d1, perspectiveX
+            a2, scaleX on Z b2, scaleY      c2, skewZ on X   d2, perspectiveY
+            a3, scaleX on Y b3, skewY on X  c3, scaleZ       d3, perspectiveZ
+            a4, translateX  b4, translateY  c4, translateZ   d4, all
+    );
+*/
+
+/* Note:- In matrix(a,b,c,d,tx,ty) and 
+matrix3d(a1,b1,c1,d1,a2,b2,c2,d2,a3,b3,c3,d3,a4,b4,c4,d4)
+the order of values in both the matrix functions are not
+in sequence.
+*/
+
+/*In case we are not using matrix3d() due to complexity
+and we are using normal individual functions such as
+rotate3d(2, 2, -1, 45deg) then if we see inside devtools we will see in the
+computed section by default the rotate() is getting converted
+into matrix3d() and we are still affecting the matrix. 
+
+so, in matrix3d() it determines the co-ordinates of the
+element, its size, position, orientation etc.*/
+
+/* The matrix() function is used for creating a 2 dimensional
+matrix transformations on the screen, this function
+integrates all these functions into one.
+matrix(sclaeX(), skewY(), skewX(), sclaeY(), translateX(), translateY())*/

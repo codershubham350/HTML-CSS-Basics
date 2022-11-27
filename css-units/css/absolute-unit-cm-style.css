@@ -1,0 +1,26 @@
+/* In CSS there are two types of units
+1) Absolute units(fixed units) :- px, pt, cm, mm, in, pc, etc.
+2) Relative units :- em, rem, %, ex, ch. vw, vh, vmin/vmax, etc. */
+
+/*Centimeter(cm) is used to define a length value to the
+properties which deal with shapes & sizes or spacing of the elements*/
+
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: dodgerblue;
+}
+
+.centimeter{
+    font-size: 1.5cm;
+}
+
+.pixel{
+    font-size: 56.7px;
+}
+
+/*1 cm = 37.8 px
+1.5 cm= 56.7 px*/
+
+/*Note:- Do not overuse the "cm" unit as the output may occur
+differently when viewed from other small screen devices.*/

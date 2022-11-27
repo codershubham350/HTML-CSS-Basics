@@ -1,0 +1,76 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    height: 100%;
+}
+
+.parent{
+    padding: 15px;
+    width: 450px;
+    border: solid 2px dodgerblue;
+    /* float: left; */
+    /* height: 60px; */
+    overflow: hidden;
+
+}
+
+div > div{
+    padding: 10px;
+    margin: 10px;
+  
+}
+
+.ele1{
+    background-color: darkred;
+    float: left;
+}
+
+.ele2{
+background-color: darkgoldenrod;
+float: left;
+}
+
+.ele3{
+    background-color: darkgreen;
+    float: left;
+}
+/* p{
+    /* clear: both; */
+/* }  */
+
+/* If we define child elements as float
+ then the parent element will get collapsed,
+ that is because the height of the parent 
+ division is based on the inside elements.*/
+
+ /* In order to avoid parent element to collapse
+ we can make the parent element float in the same direction
+ to the direction of the child element we have made
+ floated that we we can restore/avoid collapsing
+ 
+ Second, way is that as we saw parent element
+ height is depeneded on the child elements
+ and since we have made them floated(child elements)
+ then parent element will be collapsed, so if
+ we provide/give height explicity to the parent
+ element then we can avoid collapsing 
+
+ Third, way is take an empty paragraph
+ and apply clear:both to that paragraph, or 
+ take a paragraph and put some text that
+ will also fix the problem.
+
+ Fourth, way is if we do not want to add
+ any new/empty paragraphs then we can use
+ overflow property as hidden i.e,
+
+ overflow: hidden, "hidden" is going to
+ clip off any content that overflows from the area
+ */
+
+ /* Collapsing occurs when all the elements inside the parent container
+ are floated, the height of parent container gets collapsed,
+ because all the floated elements are taken out of the normal
+ document flow. So the parent element does not recogonize the sizes
+ of the floated elements & acts as if nothing is contained in it*/

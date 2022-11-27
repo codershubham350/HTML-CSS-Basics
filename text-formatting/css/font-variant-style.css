@@ -1,0 +1,21 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: beige;
+    font-size: 1.5em;
+}
+
+/*font-variant-caps property offers few different variants to control 
+the capital letters.*/
+
+/*font-variant-caps: unicase is a mixture of upper and lower case*/
+p{
+    /*font-variant: small-caps; The text will be in uppercase but with a smaller font size*/
+    /*font-variant: small-caps is used for Headings, sub-headings and to meaningful content*/
+     /* font-variant-caps: all-small-caps convert uppercase letters to small capital letters*/
+     font-variant-caps: titling-caps;
+}
+
+/* font-variant-caps: titling-caps; is a variant of uppercase designed
+especially for headings and titles, but in case font which user is using
+dosen't support this feature than the property has no visible effect*/

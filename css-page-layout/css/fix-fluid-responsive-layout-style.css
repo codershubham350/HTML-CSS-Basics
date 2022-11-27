@@ -1,0 +1,57 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    height: 100%;
+    width: 600px;
+}
+
+/* Fixed Layout are static layouts whose width is kept
+fixed by giving pixel unit to the container, the container of a
+wesite is kept in such a way that it does not move. No matter what
+screen size is the layout will be fixed and not adjust based on
+the screen size. For fixed layout we have a standard container
+width i.e, 960px(most widely used for a fixed layout)*/
+
+/* Fluid Layout also reffered to as Liquid Layout, majority
+of components in a website contain "%" length values, so that the
+layout can adjust with the screen resolution, now whenever
+the screen size is changed the elements will adjust themselves
+based on the size of the screen in proportionate manner
+
+With the help of Fluid Layout we can create->
+i) More User Friendly Layout
+ii) Flexible website design
+
+If designed well be can also avoid "scroll bar" when the
+screen is small and horizontally aligned.
+*/
+
+/* Responsive Layout/Responsive Web Design(RWD), it is a 
+modern approach for web designing where the content render
+smoothly and ajust itself with various screen sizes
+whether it can be PC, Tablet, TV or Mobile. It comprises
+of "%", "em", "vw", "vh" and several other rules like media queries
+so that Responsive Layout Design can automatically adapt
+with the browser, to maintain consistency across various
+platforms.*/
+
+/* In General, 
+
+Fixed layouts are "static" layouts in which
+the layout remains fixed upon resizing the screen. It won't
+adjust with the screen resolution. Majority of elements are
+assigned with the pixel unit be it their width, height or
+margin.
+
+In Fluid Layout whenever the screen is resized, the elements
+or the content adjust itself accordingly proportional to the
+screen. It makes use of percentage length unit rather than
+pixels.
+
+Responsive layouts are much better than the fluid & fixed
+layouts, as the content renders smoothly & adjusts automatically
+whenever the screen size is resized or the resolution gets changed.
+It makes use of media queries & viewport units, so that the
+layout is related with the overall viewport.
+*/

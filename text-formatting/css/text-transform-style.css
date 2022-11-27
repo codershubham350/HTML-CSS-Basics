@@ -1,0 +1,29 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    font-size: 1.5em;
+}
+
+/* text-transform provides following properties
+lowercase-> converts letter/charaters to lowercase
+uppercase-> converts letter/characters to uppercase
+capitalize-> converts only first letter of every word to uppercase */
+
+h1{
+    color: burlywood;
+    text-transform: capitalize;
+}
+
+p{
+    text-transform: none;
+    text-transform: uppercase; /*Above code style will get overridden i.e text-transform:none*/
+
+}
+
+/*capitalize option will not change the letters coming after numbers,
+in case we define any letter starting just before number then
+capitalize will work as required*/
+span{
+    text-transform: capitalize;
+}

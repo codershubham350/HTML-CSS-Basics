@@ -1,0 +1,80 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+.container{
+    width: 85%;
+    margin: 30px auto 0;
+    border: 3px solid #111;
+    border-radius: 70px;
+    padding: 15px;
+    background-color: #222;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: darkorange;
+    /* transition-timing-function: cubic-bezier(1,0,0,1); */
+    /* transition-timing-function: steps(3);
+    transition-duration: 1s; */
+    transition: 1s steps(3);
+}
+
+.container:hover .box{
+    margin-left: 80%;    
+}
+
+/* transition-timing-function: ease; is a default value*/
+
+/*transition-timing-function: ease-in;
+starting: slow
+in-between speed: increases
+ending speed: fast*/
+
+/*transition-timing-function: ease-out;
+starting: fast
+in-between speed: decreases
+ending speed: slow*/
+
+/*transition-timing-function: ease-in-out; (combination of ease-in + ease-out)
+starting: slow
+in-between speed: fast then slow
+ending speed: slow*/
+
+/*transition-timing-function: liner;
+starting: even
+in-between speed: even
+ending speed: even*/
+
+/*The bezier curve is used in graphical edition software
+for defining a nice & smooth curve. The bezier curve basically
+describes the acceleration pattern on the graph.
+
+In CSS it is referred as cubic bezier curve and most of the
+transition-timing-function is based out of the flow of this
+curve.
+
+If we want to manipulate the bezier curve and want to create a 
+custom bezier curve we can use the cubic-bezier() function as:
+Ex:- transition-timing-function: cubic-bezier();
+
+here, cubic-bezier() takes four point values as below:
+Ex:- transition-timing-function: cubic-bezier(0.2, 0.9, 0.8, 0.1);
+and we can create our own custom animation functions.
+*/
+
+/*  transition-timing-function: steps();
+It displays the transition in specified stops of equal length
+of time.
+
+Ex:- transition-timing-function: steps(4)
+Here in steps 4 it will complete the transition in
+the 4 stops
+
+and for shorthand property, it is defined as:
+transition: 1s steps(3);
+*/

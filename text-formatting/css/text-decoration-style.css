@@ -1,0 +1,27 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: beige;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/*text-decoration: text-decoration-line text-decoration-style text-decoration-color text-decoration-thickness */
+/* Note: We can define multiple lines for any element
+but we cannot define more than one line style or color */
+p{
+    margin-top: 10em;
+    text-decoration: overline underline wavy crimson 4px;
+    text-underline-offset: 10px;
+}
+
+/* if we define text-decoration as underline then we have 
+access to one more property called text-underline-offset which
+provides some space between the text and the underline */
+
+/* In case we do not want any text decoration then we can set
+it to none */
+
+a{
+    text-decoration: none;
+}

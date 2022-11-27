@@ -1,0 +1,61 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+/* A transition requires a starting point i.e, initial state and
+an ending point i.e, the active state, any CSS transition
+is always triggered between two states. */
+
+/* CSS transition can be triggered using pseudo selectors like
+:hover, :active, :focus etc.*/
+
+/*In CSS transition can be defined by following properties:
+transition, transition-property, transition-duration,
+transition-timing-function, transition-delay
+
+Transition Shorthand Property:
+transition: property duration timing-function delay;
+*/
+
+.box-rotation{
+    height: 150px;
+    width: 150px;
+    background-color: goldenrod;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    padding: 10px;
+    transition: all 1s;
+}
+
+.box-rotation:hover{
+    color: #ccc;
+    background-color: orangered;
+    border-radius: 50%;
+    transition: all 1s;
+    transform: rotateZ(360deg);
+}
+
+.parentDiv{
+    display: flex;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* transition: all
+here, all means we want to apply all the transition properties 
+*/
+
+/* CSS Transition provides a way to control overall animation
+& it's related aspects like speed using time, movement
+of transition effect etc., when changing the CSS properties.
+In short, it helps you to change the property values smoothly,
+over a duration.*/

@@ -1,0 +1,104 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: khaki;
+    height: 100%;
+}
+
+/* Margin is the outermost portion of the box model, so it creates
+space outside the element's border  */
+
+/* If we simply define margin property and
+provide the length property then it will
+apply the margin to all the four sides of the element*/
+
+/* div{
+    border: solid 5px orangered;
+} 
+
+ p {
+     border: solid 5px;
+     padding: 10px;
+     /* margin: 50px; */
+     /* margin-top: 50px;
+    margin-right: 100px;
+    margin-bottom: 60px;
+    margin-left: 70px; */
+     /* margin: 50px 100px; */
+     /* margin: auto auto; */
+ /* } */
+
+
+
+
+
+
+
+/* Margin takes four values and we can deine using shorthand
+i.e, margin: top, right, bottom, left .
+*/
+
+/* If we want to apply margin to the individual
+sides of the element then we need to define
+margin-top, margin-right, margin-bottom, margin-left. */
+
+/* If we give only 3 values to margin property then
+the margin will take values as
+Ex:- margin: top, right-left, bottom.
+*/
+
+/* If we give only 2 values to margin property then
+the margin will take values as
+Ex:- margin: top-bottom, right-left.
+*/
+
+/* each of the margin property accepts an additional
+keyword value "auto" here,
+
+"auto" value is equivalent to 0 (which is the initial value)
+margin property, or else whatever space is available on 
+the side of element "auto" will consider that value.
+
+"auto" is very handy when it comes to centering the element
+within it's container.
+
+*/
+
+/* For centering the element using auto we need to use below
+syntax*/
+
+div{
+    border: solid 5px orangered;
+    width: 400px;
+    margin: auto; /* without width, auto value is of no use*/
+}
+
+p{
+    border: solid 5px;
+    padding: 10px;
+    margin: auto auto;
+    width: 300px;
+}
+
+/* Not: "auto" value is only used for horizontal centering*/
+
+/* Margin creates space around an elemnt's border while padding 
+creates space between an elements border and content,
+i.e, margin controls the space outside the element and 
+padding controls the space inside the element.
+
+Padding is the closest property to the element's content,
+while the margin is the farthest property from the content.
+*/
+
+/* In order to center the element using "auto",
+If we have specified width of an element, setting the
+margin: 0 auto;
+will make the element sit centrally within the parent
+container.
+*/
+
+/* Note: margin: auto, will only work on block level
+elements and it will center the elements horizontally and 
+not vertically, because the W3 specs for CSS are designed
+in such a way*/

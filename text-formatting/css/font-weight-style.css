@@ -1,0 +1,22 @@
+body{
+    background-color: #333;
+    font-size: 1.2em;
+    color:#fff;
+    text-align: center;
+}
+
+  /*font:weight:normal is the default thickness of every element
+    when browser loads.*/
+  /*ligter/100
+    normal/400
+    bold/700
+    bolder/900*/
+
+    /* font-weight also depends on the font family */
+    /* In case different version of fonts are not available
+    then bowser will mimic its own version of the font */
+P{
+    font-size: 1.5em;
+    font-weight: 100; /*font-weight:bold is equivalent to font-weight:700*/
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,19 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+[class$="Test"] {
+    color: #9f3;
+    font-size: 2em;
+    font-style: italic;
+}
+
+/* attribute suffix selector will select all the values
+which is ending with the initialized value
+ex:- [attribute-name$="attribute-value"]*/
+
+/* select all links thats starts with 'c' and end with '.com'
+a[href^="c"][href$=".com"] */
+

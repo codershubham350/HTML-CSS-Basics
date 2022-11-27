@@ -1,0 +1,48 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+/* transition-duration specifies at what time transition will
+come into effect and the duration is defined in terms of
+seconds or milliseconds
+
+Ex:- transition-duration: 2s;
+transition-delay: 1s;
+*/
+
+.container {
+    width: 85%;
+    margin: 30px auto 0;
+    border: 3px solid #111;
+    border-radius: 70px;
+    padding: 15px;
+    background-color: #222;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: darkorange;
+    /* transition: 1s cubic-bezier(1, 0, 0, 1); */
+    transition: background-color 2s ease-in, width 2s ease;
+}
+
+.container:hover .box {
+    /* margin-left: 80%; */
+    width: 510px;
+    transition-delay: 800ms;
+    background-color: dodgerblue;
+}
+
+/* If we want to define different transition durations for
+different properties can be defined together in the
+"transition" property.
+
+Ex:- transition: background-color 2s ease-in, width 2s ease;
+
+we can also give the transition in the negative value
+as:-   transition-delay: -1s;
+*/

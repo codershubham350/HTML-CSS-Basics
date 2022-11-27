@@ -1,0 +1,96 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    height: 100%;
+    width: 600px;
+}
+
+div{
+    background-color: darkgoldenrod;
+    text-align: center;
+    border: solid 2px khaki;
+    padding: 15px;
+    font-size: 1.4rem;
+}
+
+/* When we specify any element as display: grid;
+then that element becomes "Grid Container" and in most
+cases it acts as a "direct parent of all the grid items" that
+is the child elements*/
+
+/*Just by using only display: grid; items inside does not
+act like grid we need to define row and column sizes. So this
+provides grid layouts an upper hand compared with other layouts,
+as you won't be needing the floats & positioning properties
+with grid layouts.*/
+
+.gridContainer{
+    display: grid;
+    /* grid-template-columns: repeat(4, 120px); */
+    /* grid-template-columns: repeat(4,2fr);
+    grid-template-rows: repeat(2,1fr); */
+    /* grid-template-rows: repeat(2,80px); */
+    grid-template-columns: 40% 1fr 1fr 2fr;
+    margin: 3rem;
+    justify-content: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    /* border: solid 4px;; */
+}
+
+/*Here we have 8 elements so we can align elements in 4 columns
+where each element will be aligned and take 2 rows by default
+and now we can provide some height styling to rows and width
+styling to columns. */
+
+/* repeat() function is used for creating same width/height of
+all columns/rows
+
+Ex:-    grid-template-rows: repeat(2, 80px) which means apply
+80px to 2 rows 
+
+grid-template-columns: repeat(No. of columns, Width);
+grid-template-rows: repeat(No. of rows, Height);
+*/
+
+/* In order to make a grid flexible we can use "%" values
+
+Ex:- grid-template-columns: repeat(4, 25%);
+grid-template-rows: repeat(2, 80%);
+
+But the problem with percentage values is it do not count/calculate
+the free space available within the grid container.
+
+In order to avoid this problem we have special unit for grid
+called "fr" which is fraction unit, "fr" works only with
+the free space available inside the container & is also
+responsive & flexible
+*/
+
+/*In order to give space between rows and columns we can use the property
+called "grid-gap" in some terminology it is called as "gutters", 
+Ex:- grid-gap: 10px;
+
+"Gutters" are the lines between the columns and rows which seperate each
+of the items.*/
+
+/* "grid-gap" is used to provide equal space to columns and rows
+but if we want to give custom space to "rows" and "columns" we 
+can use "column-gap" and "row-gap" for that.
+*/
+
+/* In general, if we want to use grid we need to define
+"display: grid" property to the "containing" element & then
+you define the rows & columns of the grid. */
+
+/* "fr" unit has been created just for the grid systems, as it works
+only with the free space available inside the container, making the grids
+responsive and flexible*/
+
+/* By using the "grid-template-rows" and "grid-template-columns"
+properties, we can define the number of columns & rows you want.
+Each value in "grid-template-columns" also defines
+the width of the grid column & in "grid-template-rows" each value
+defines the height of the row.
+*/

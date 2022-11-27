@@ -1,0 +1,21 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    font-size: 1.5em;
+}
+
+/* ::before used to add content before the starting of that element */
+/* content is used to define what content we want to add before the element */
+/* Note: pseudo-element creates a space inside the web page,
+instead of adding the text inside the paragraph */
+/* Note-> ::before and ::after are not part of DOM,
+they don't have element type & don't exist inside the DOM */
+p::before{
+    /* without content pseudo-element is useless */
+    /* content:'This is the beginning...'; */
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: brown;
+}

@@ -1,0 +1,58 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.card{
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    margin: 0.5rem;
+    text-align: center;
+    line-height: 6rem;
+    border-radius: 0.8rem; 
+    transform-style: preserve-3d;   
+}
+
+.face-front{
+    background-color: royalblue;
+    font-size: 3rem;
+}
+
+.face-back{
+    background-color: royalblue;
+    font-size: 1rem;
+    transform: rotateY(180deg);
+}
+
+.face{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.8rem;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.card:hover .face-front{
+    transform: rotateY(-180deg);
+}
+
+.card:hover .face-back{
+    transform: rotateY(0deg);
+}

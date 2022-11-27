@@ -1,0 +1,26 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: beige;
+    font-size: 1.5em;
+
+}
+
+div{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    margin-top: 10em;
+}
+
+a{
+    color: brown;
+    padding: 12px;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: goldenrod;
+    border-radius: 15px;
+    transition: 0.8s;
+}

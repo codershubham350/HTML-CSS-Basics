@@ -1,0 +1,41 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+/* animation-delay and animation-duration takes time property
+values in seconds and milliseconds.
+
+A positive value indicates that the animation should
+begin after the specified amount of time
+
+A negative value will cause that the animation to
+execute immediately.
+*/
+
+.myDiv{
+    background-color: firebrick;
+    width: 150px;
+    height: 150px;
+    margin: 100px 230px;
+}
+
+.myDiv:hover{
+    /* animation-name: myAnimation;
+    animation-duration: 2s;
+    animation-delay: -1s; //execute immediately
+     */
+
+     animation: 800ms 2s myAnimation;
+}
+
+@keyframes myAnimation {
+    45%{
+        border-radius: 50%;
+    }
+    100%{
+        transform: rotate(180deg) scale(2);
+        background-color: goldenrod;
+    }
+}

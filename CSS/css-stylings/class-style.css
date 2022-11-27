@@ -1,0 +1,20 @@
+body{
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+p.myStyle {
+    color: rgb(168,140,16);
+    font-style: oblique;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.subTopic{
+    font-size: 1em;
+    color: darkcyan;
+    text-decoration: underline;
+    font-weight: bold;
+}

@@ -1,0 +1,68 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    height: 100%;
+}
+
+/* By default when we define element inside a web page, 
+elements have some fixed position but when we assign them
+'float' property then we can move element to any desired
+position*/
+
+div {
+    width: 100px;
+    height: 100px;
+    margin: 1rem;
+    font-size: 1.2rem;
+    border: solid 2px white;
+    text-align: center;
+    line-height: 100px;
+  }
+
+.ele1 {
+    background-color: darkred; 
+    float: right;
+}
+
+.ele2 {
+    background-color: darkgoldenrod;
+    /* when clear is applied, element are brought down i.e, element 2 and 3*/
+    clear: right; 
+}
+
+.ele3 {
+    background-color: darkgreen;  
+    float: right;
+}
+
+/* clear have 5 properties:
+right,
+left,
+both,
+none,
+inherit*/
+
+/* If we assign any element with 'clear' property
+then it will not allow to overlap the left floated
+element
+
+Ex:- .ele3{clear: left;} will not allow to overlap
+left floated element, but will allow to overlap the right
+floated element and vice-versa
+*/
+
+/* If we assign clear: both then, the element to which
+'clear' property has been assigned will not allow element
+to overlap from both the sides i.e, left and right sides
+to overlap. ANd the element which is having clear:both
+property will be shifted to the bottom side of the element
+which has the maximum height.*/
+
+/* Note:- Giving float and clear property together inside
+an element is not a desirable approach. When you float
+an element & clear a direction, you are simply adding a
+page break to the document flow.*/
+
+/* If we don't give the clear property then the elements
+will overlap or clutter up with the existing floating elements.*/

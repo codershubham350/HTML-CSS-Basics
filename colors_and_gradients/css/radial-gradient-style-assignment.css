@@ -1,0 +1,22 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div{
+    padding: 170px;
+    margin-top: 5em;
+    margin-left: 5em;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle at 50% 0,
+        #f00f,#f000 60%
+    ),
+    radial-gradient(circle at 5% 75%,
+    #0f0f, #0f00 60%),
+    radial-gradient(circle at 95% 75%,
+    #00ff, #00f0 60%),
+    #fff;
+}

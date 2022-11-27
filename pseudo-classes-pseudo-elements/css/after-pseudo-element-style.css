@@ -1,0 +1,23 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    font-size: 1.5em;
+}
+
+/* ::after creates a pseudo element that is the 'last-child'
+of the selecetd element */
+
+/* Note: ::before and ::after pseudo element are also used to avoid
+situation called 'container collapsing' */
+
+p::after{
+    content:'<<End';
+    color: greenyellow;
+}
+
+p::before{
+    content:'Begin>>';
+    color: green;
+
+}

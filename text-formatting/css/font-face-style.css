@@ -1,0 +1,35 @@
+
+/* @ is used to create css rules,
+like @import, @charset, @font-face, @namespace, @media, @keyframes
+etc.
+
+@font-face rule is defined first before defining any other styles*/
+
+/* We can also define the format of the fonts like OTF,TTF,SVG,EOT,WOFF,WOFF2 */
+@font-face {
+    
+    font-family: 'headingFont'; /*  we can give here any custom name */
+    src: url(/text-formatting/fonts/RobotoSlab-Bold.ttf) format('woff');    
+}
+
+@font-face {
+    font-family: 'paragraphFont';
+    src: url(/text-formatting/fonts/RobotoSlab-Regular.ttf) format('woff2');
+}
+
+body{
+    background-color: #333;
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+h1{
+    font-family: 'headingFont';
+    text-align: center;
+    font-size: 3em;
+    color: khaki;
+}
+
+p{
+    font-family: 'paragraphFont';
+}

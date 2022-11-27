@@ -1,0 +1,30 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+div {
+    text-align: center;
+    padding: 25px;
+}
+
+a {
+    width: 200px;
+    margin: 5px;
+    padding: 20px;
+    color: dodgerblue;
+    font-weight: 800;
+    background-color: transparent;
+    border: 3px solid dodgerblue;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+/* :active pseudo class gets triggered when user clicks the button/
+it also gets triggered when user press button with the help of spacebar
+this only works for button tag not for anchor tag in that spacebar dosen't work */
+a:active {
+    box-shadow: 0 0 10px 0 dodgerblue inset, 0 0 20px 0 dodgerblue;
+    border: 3px solid aqua;
+}

@@ -1,0 +1,27 @@
+body{
+    background-color: #333;
+    color: #ccc;
+    font-size: 1.2em;    
+}
+
+/* In font family we not select only one font instead we select a family
+and by default the very first font inn the family is applied */
+
+/* In case browser fail to recogonise first font it will move to 
+next font and so on till it get the font which is available to
+the browser inside font-family */
+
+/* generic family are by default available to all browsers,
+generic font is used without quotes, whereas we need to specify
+the name of font inside quotes for non-generic fonts */
+
+/* Note: it is important to specify generic family in every font stack
+we define, in case we don't define any generic font then browser
+will set the font by default to any system available generic font */
+
+/* If we give generic font at the beginning of the font-family
+then rest fonts will be neglected so it is good practice to
+include them at the end of font family */
+p{
+    font-family:'Times New Roman', Times, serif
+}

@@ -1,0 +1,91 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+/* translate() repositions the element in specified
+directions. */
+
+
+
+.transform-2d{
+    background-color: brown;
+    padding: 25px;
+    margin: 15px;
+    width: 200px;
+    transform: translateX(40px) translateY(40px);
+}
+
+.transform-3d {
+    background-color: darkgreen;
+    padding: 25px;
+    margin: 15px;
+    width: 200px;
+    /* transform: translateX(40px) translateY(40px) translateZ(40px); */
+    transform: perspective(200px) translate3d(10px,10px, 50px);
+}
+
+/* transofrm: is used to give 2D/3D transformation to an element.
+
+Ex:- transform: translate(x-axis, y-axis) [basic syntax]
+here, both the values are seperated with comma. And we
+can also take negative values for both x-axis and y-axis
+
+We can also seperately define the properties such as:
+transform: translateX(40px) translateY(40px)
+
+For 2D transformation we have 2 values:
+i.e, transform: translateX(40px) translateY(40px);
+
+For 3D transformation we have 3 values: i.e,
+transform: translateX(40px) translateY(40px) translateZ(40px);
+
+or we can use the shorhand i.e,transform: translate3d();
+*/
+
+/* translate() is just a shorthand for giving 2D transformation. */
+
+/* Note: In transform property for 2D and 3D precedience
+is important as, if in html the 3D is assigned before 2D
+so 2D element/object will overlap 3D element/object and if
+3D element/object is assigned after 2D element/object then 3D element/object
+will overlap the 3D element/object.
+
+so, in short heirarchial order of elements matters when
+applying any transformation.
+*/
+
+/* In some cases we can observe that transform: translate3d(10px, 10px, 50px);
+property is not working well with respect to z-axis so 
+in that case we have a seperate property called perspective().
+
+perspective(), it takes a length value which defines a virtual
+distance between the plane of our computer screen and the
+HTML element on which we are applying the z-axis to.
+
+Ex:- transform: perspective(200px) translate3d(10px, 10px, 50px);
+
+Here perspective will give a virtaul distance of 200px between
+the screen and the HTML element and in z-axis it appears 50px closer, 
+so element/object seems to be closer.
+*/
+
+/* transform property is used whenever we want to apply 2D or 3D
+transformation to an element, as this property offers various functions
+like translate(), rotate(), sclae(), move(), skew() etc.
+which can be applied on the elements.
+*/
+
+/* translate() function is an in-built function of CSS
+to reposition the element either in the vertical or in the
+horizontal direction. It is used for moving the element
+from it's current position based on the given X & Y axis
+directional parameters.*/
+
+/* translateZ() is a CSS function that repositions an element
+along the z-axis in 3D space, i.e, it will bring the element
+closer or farther away from the viewer.*/
+
+/*perspective() function is used to give a 3D-positioned element
+some perspective. It defines how far the object is away from the user.*/

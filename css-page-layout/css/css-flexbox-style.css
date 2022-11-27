@@ -1,0 +1,44 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    height: 100%;
+    width: 600px;
+}
+
+/* Flexbox (Flexible Box) is a layout model which helps you
+design and create advanced web layouts, which are difficult
+to achieve using other layout models. */
+
+/* Flexbox provides many functionalities such as
+align-content, align-items, flex-direction, flex-flow,
+flex-wrap, justify-content, align-self, flex, flex-basis,
+flex-grow, flex-shrink, order
+*/
+
+/* Benfits of Flexbox:-
+i) Making of navigation bars very easy
+ii) Making of menus very easy
+iii) No need of float, so avoid container collapsing
+*/
+
+/* Creating grid layouts with flexbox is an easier approach
+and very simple to work with, like creating equal height columns 
+and much more*/
+
+/* Flexbox is used for creating 1-D(one-dimensional) Layout
+so every 'flex container' contains "main-axis" and the direction of
+the "main-axis" is based on the "flex-direction" property. Then
+'flex container' has "main start" and "main end" which tells
+the starting and ending point of the flex container, then we
+have the "main size" which is the width or height of the
+'flex container', apart from that it has the "cross-axis"
+which is perpendicular to the the "main-axis" and it's
+direction depends on the "main-axis" direction.
+   "Cross-start" and "Cross-end" specifies the placement of items
+inside the 'flex container', starting from the "cross-start"
+and going till the "cross-end" direction and at last the
+"cross-size" which is the width or height of the 'flex container'
+or 'flex item' whichever is in the cross diemension becomes the
+item "cross-size".
+*/

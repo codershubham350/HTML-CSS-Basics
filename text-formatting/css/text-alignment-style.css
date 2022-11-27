@@ -1,0 +1,33 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: goldenrod;
+    font-size: 1.5em;
+
+}
+
+/* text-alignment takes 6 values i.e. left, center, right, start, justify, end */
+/* justify strect the text to the container width and each text will
+have the same width as compared with previous texts */
+
+p{
+    text-align: start;
+    direction: rtl;
+}
+
+/* difference between end and right alignment 
+
+-> Basically both are same i.e, they both will align the content to its
+right side. but end is used alongside the direction property to 
+adjust the direction as well as the alignment, but the right will
+keep your text to the right side no matter what direction is given
+*/
+
+/* difference between left and start alignment 
+
+-> Basically both are same i.e, they both will align the content to its
+left side. but start is used alongside the direction property to 
+adjust the direction as well as the alignment if we give direction:rtl
+in start then it will align the content from right to left direction,
+ but the left will keep your text to the left side no matter what direction is given
+*/

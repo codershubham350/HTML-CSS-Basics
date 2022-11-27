@@ -1,0 +1,29 @@
+/* In CSS there are two types of units
+1) Absolute units(fixed units) :- px, pt, cm, mm, in, pc, etc.
+2) Relative units :- em, rem, %, ex, ch. vw, vh, vmin/vmax, etc. */
+
+/*Pica(pc) is used for printing the content on a paper
+and is approximately 1/6th of an inch*/
+
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: dodgerblue;
+}
+
+/*1 pc = 1/6 in
+  1 pc = 16 px
+  1 pc = 12 pt
+  6 pc = 1 in  
+*/
+.pica{
+    font-size: 2pc;
+}
+
+.pixel{
+    font-size: 32px;
+}
+
+.point{
+    font-size: 24pt;
+}

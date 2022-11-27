@@ -1,0 +1,185 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+/* For creating CSS animations we require @keyframes rule.
+@keyframes rule consist of following rules:
+animation-timing-function,
+animation-iteration-count,
+@keyframes,
+animation-name,
+animation-duration,
+animation-direction,
+animation-delay,
+animation-fill-mode
+
+And these are used to apply different kinds of styles at
+different point of time.
+
+Ex:- 0%{ CSS Rules; }
+     8%{ CSS Rules; }
+     11%{ CSS Rules; }
+     17%{ CSS Rules; }
+     29%{ CSS Rules; }
+     41%{ CSS Rules; }
+     53%{ CSS Rules; }
+     62%{ CSS Rules; }
+     75%{ CSS Rules; }
+     83%{ CSS Rules; }
+     91%{ CSS Rules; }
+     100%{ CSS Rules; }
+*/
+
+.slide{
+    background-color: darkolivegreen;
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    animation: slideBox 3s infinite;
+}
+
+/* @keyframes slideBox {
+    from{
+        transform: translate(0px);
+    }
+    to{
+        transform: translate(450px) rotate(90deg);
+    }
+} */
+
+@keyframes slideBox {
+    0% {
+        transform: translate(0px);
+    }
+
+    33% {
+        height: 100px;
+        width: 1px
+    }
+
+    43%{
+        border-radius: 50%;
+        background-color: goldenrod;
+    }
+
+    100% {
+        transform: translate(450px) rotate(90deg);
+    }
+}
+
+/* In @keyframes we need to give name to our animation.
+This name will be further specified in the "animation" property,
+for binding the keyframe with animation.*/
+
+/* Then we have the Keyframe selectors
+
+Ex:- @keyframes slideBox {
+    // Keyframe Selectors
+}
+
+Each keyframe will consist of one or more selectors
+which defines a point in animation.
+    Keyframe Selectors have two keywords i.e, 
+    i) from (Animation Starts)
+    ii) to (Animation Ends)
+
+Once we have defined the @keyframes{} and Keyframe Selectors,
+now we need to define the "animation" property where
+we want to apply the animation.
+
+Basic syntax for animation is:
+Ex:-
+animation: name duration timing-function delay iteration-count direction fill-mode;
+
+animation:
+name                    name_of_keyframe
+duration                duration_amount_for_element_to_animate
+timing-function 
+delay 
+iteration-count         for_how-many_iteration_we_want_to_repeat_animation
+direction 
+fill-mode;
+*/
+
+/* In @keyframes order is not important
+
+Ex:- @keyframes slideBox {
+    from {
+        transform: translate(0px);
+    }
+
+    to {
+        transform: translate(450px) rotate(90deg);
+    }
+}
+
+We can also define above example in below order:
+@keyframes slideBox {
+    to {
+            transform: translate(450px) rotate(90deg);
+    }
+    
+    from {
+        transform: translate(0px);
+    }   
+}
+
+here, "from" defines the starting point so we can define
+it in terms of percentage like "0%".
+
+And, "to" defines the ending point so we can define
+it in terms of percentage like "100%".
+*/
+
+/* In @keyframes we can give multiple points where
+we want to apply animations like:
+
+Ex:- 
+        @keyframes slideBox {
+            0% {
+                transform: translate(0px);
+            }           
+
+            43% {
+                border-radius: 50%;
+                background-color: goldenrod;
+            }
+    
+            100% {
+                transform: translate(450px) rotate(90deg);
+            }
+        }
+
+    here, animation will be applied at the time where, 43% will 
+    get multiplied with the duration we have provided in
+    the "animation" property.
+    Ex:- 43% x 3s(inside animation property)
+
+    Ex:- Similarly for below:
+    @keyframes slideBox {
+    0% {
+        transform: translate(0px);
+    }
+
+    33% {
+        height: 100px;
+        width: 1px
+    }
+
+    43%{
+        border-radius: 50%;
+        background-color: goldenrod;
+    }
+
+    100% {
+        transform: translate(450px) rotate(90deg);
+    }
+}
+
+here, animation will be applied at the time where, 33% will 
+get multiplied with the duration we have provided in
+the "animation" property.
+Ex:- 33% x 3s(inside animation property)
+*/

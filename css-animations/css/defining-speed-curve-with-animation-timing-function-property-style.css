@@ -1,0 +1,110 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+/* we can define the animation Pace using the speed curve animation
+
+Ex:- If we want to start animation with a slow rate, then
+want to speed up it in middle and want to slow down at the end
+we can do it with the animation-timing-function i.e,
+animation-timing-function: ease;
+*/
+
+.elem {
+    width: 100px;
+    height: 100px;
+    margin: 100px 50px;
+    border-radius: 50%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: goldenrod;
+    animation: zigzag 3s alternate infinite cubic-bezier(0.1, 0.8, 0.1, 0.8);
+    /* animation-timing-function: cubic-bezier(0.1, 0.8, 0.1, 0.8); */
+}
+
+@keyframes zigzag {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    15% {
+        left: 60px;
+        top: -50px;
+    }
+
+    30% {
+        left: 120px;
+        top: 0;
+    }
+
+    45% {
+        left: 180px;
+        top: -50px;
+    }
+
+    60% {
+        left: 240px;
+        top: 0px;
+    }
+
+    75% {
+        left: 300px;
+        top: -50px;
+    }
+
+    100% {
+        left: 360px;
+        top: 0px;
+    }
+}
+
+/* Default value for animation-timing-function is ease
+animation-timing-function: ease; // starts slow, speeds up in the middle and at last slows down at the end.
+
+animation-timing-function: ease-in; // similar in transition-timing-function property
+animation-timing-function: ease-out; // similar in transition-timing-function property
+animation-timing-function: ease-in-out; // similar in transition-timing-function property
+
+animation-timing-function: linear; // keeps the speed equal throughout the animation
+animation-timing-function: steps(); // It takes two parameters 1st is number value which is greater than "0".
+                                   // 2nd parameter value is optional which takes either the value start or end. 
+
+Ex:- animation-timing-function: steps(3, start);
+OR
+animation-timing-function: steps(3, end);
+
+Where the second parameter specify the point at which the
+change of value occurs.
+
+Using steps() we can specify the number of steps between the keyframes
+
+For more control and custom animations we have another animation property
+    animation-timing-function: cubic-bezier(x1, y1, x2, y2);
+
+It represents the x, y coordinates of the two points on the graph
+and the range should be between 0 to 1.
+
+cubic-bezier() is used to customize the speed of the curve animation.
+
+*/
+
+/* Shorthand property is:
+ animation: zigzag 3s alternate infinite cubic-bezier(0.1, 0.8, 0.1, 0.8);*/
+
+ /* Difference between animation-timing-function and
+ transition-timing-function
+ 
+ Though these two properties share similar values, there is
+ still a major difference between them.
+ 
+ animation-timing-function              transition-timing-function 
+ 
+ i) Multiple Keyframes                  i) Only 2 Keyframes
+ ii) Can execute in loops               ii) Executes only once, can't loop 
+ iii) Forward/ Backward                 iii) Forward when triggered & backward 
+        / Alternate                          when trigger is removed.
+ */

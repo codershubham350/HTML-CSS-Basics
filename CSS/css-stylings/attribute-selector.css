@@ -1,0 +1,21 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+a.link1{
+    color: red;
+    font-style: italic;
+    font-weight: bold;    
+}
+
+a[href="google.com"], p[class="para"]{
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* attribute selector will apply styles to those elemsnts which are
+matching the attributes inside [] ex:- element[attribute-name] 
+or ex:- element[attribute-name="attribute-value"]*/

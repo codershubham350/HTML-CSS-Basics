@@ -1,0 +1,62 @@
+/* In CSS there are two types of units
+1) Absolute units(fixed units) :- px, pt, cm, mm, in, pc, etc.
+2) Relative units :- em, rem, %, ex, ch. vw, vh, vmin/vmax, etc. */
+
+/*Percentage(%) is relative to it's parent element's size
+whether absolute or relative*/
+
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: salmon;
+}
+
+/*font-size:100%; = font-size:16px;*/
+
+/* div{
+    border: solid 2px salmon;
+    font-size: 150%;
+    width: 350px;
+    margin: 30% 25%;
+}
+
+p{
+    font-size: 250%;
+    border: solid 2px goldenrod;
+    width: 80%;
+    padding: 5%;
+} */
+
+/*In parent element if we define width and in the
+child element we define the width then the total
+width applied to the child element will pe the product
+of parent element x child element.
+Ex:- div{width: 350px;} p{width: 80%}
+then the width which will be applied to child element 'p' of
+parent element 'div' 350px x 0.8 = 280px to element 'p'.
+*/
+
+/* "%" unit in css is very handy when it comes to positioning
+the elements on the page. Most oftenly used in creating fluid
+layouts. (fluid layouts are a type of web page design in which
+layout of the page resizes as the window size is changed, and
+components inside the fuild layout will adjust themselves
+based on the page layout)*/
+
+.fixed-layout{
+    border: solid 2px salmon;
+    width: 400px;
+    padding: 50px;
+}
+
+.fluid-layout{
+    border: solid 2px goldenrod;
+    width: 61.75%;
+    padding: 9%;
+}
+
+/*We can also use "%" to create flexible images,
+so that the image will adjust with the browser screen*/
+
+/*Some properties do not accept percentage unit 
+like e.g. border-width*/

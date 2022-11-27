@@ -1,0 +1,80 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+/*In CSS transition can be defined by following properties:
+transition, transition-property, transition-duration,
+transition-timing-function, transition-delay
+
+Transition Shorthand Property:
+transition: property duration timing-function delay;
+*/
+
+
+/* In transition there is a property called transition-property
+transition-property: width, height, background-color, margin;
+
+here, we need to specify in which css property we need to 
+apply the transition.
+*/
+
+div{
+    background-color: seagreen;
+    width: 200px;
+    height: 230px;
+    font-size: 2.5rem;
+    padding: 20px;   
+    /* transition: background-color 4s, font-size 3s, width 2s, height 1s; */
+    transition-property: font-size, width, height, background-color;
+    transition-duration: 1s; /*specifies the time of transition to complete*/
+}
+
+div:hover{
+    width: 450px;
+    font-size: 3rem;
+    height: 300px;
+    background-color: goldenrod;
+}
+
+/*Here whatever properties we have defined inside the :hover
+effect only those properies will come in effect of transition
+when we apply that properties inside transition-property.
+*/
+
+/*In above case in div:hover{} font-size transition completes
+in 1 sec of duration and this is similar case with the width.*/
+
+/* transition property is used by following way:
+transition-property: property-name;
+transition-duration: time;
+
+And another way is by using shorthand property:
+transition: property-name time;
+Ex:-
+transition: background-color 4s, font-size 3s, width 2s, height 1s;
+*/
+
+/* transition properties also keyword values i.e,
+Ex:- transition-property: none;
+or
+transition-property: all;
+By default transition property value is set to "all";
+*/
+
+/* Note:- It is not recommended to use the value "all",
+instead always use the specific property only. Because
+transitions are CPU intensive and some of the transitions
+rely on GPU.
+
+While most of the time CPU handles the transitions,
+but GPU handles transition better
+
+Sometimes CPU can cause poor quality of transitions
+due to overload.
+
+So, giving the value "all" can sometimes lead to inadequate
+transition.
+*/
+

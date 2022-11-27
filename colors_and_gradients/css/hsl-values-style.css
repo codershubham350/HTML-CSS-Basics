@@ -1,0 +1,41 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    font-size: 1.5em;
+}
+
+p{
+    color:hsla(330, 70%, 50%,0.7)
+}
+
+/*HSL stands for Hue Saturation Lightness*/
+/*It is a css function which allows you to provide colors by
+specifying Hue, Saturation & Light components of the color*/
+
+/*hsl takes three values which are -> hsl(hue, saturation, lightness)
+Ex:- color: hsl(310,50%,25%)
+*/
+
+/*Hue starts from 0 degree till 359 degree different colors are applied
+Red is 0 degree, Green is 120 degree and Blue is 240 degree
+
+in order to define hue in color we can use
+color: hsl(230deg,50%,25%) or color: hsl(230,50%,25%)
+*/
+
+/*Saturation is reperesented in % it reperesents the amount of
+saturation given to the color
+Ex:- 100% stauration is fully saturated(more colorful) and
+0% is no opacity of Hue*/
+
+/*Lightness is just like saturation it is also reperesented in % 
+it reperesents the amount of lightness given to the color
+Ex:- 0% lightness is black and 100% is white*/
+
+/*Note:- without changing the 'Hue' of the color
+changing the 'Saturation' and 'Lightness' will
+give you different shades of the given 'Hue'*/
+
+/*For setting up the opacity we need to use
+hsla(hue, saturation, lightness, alpha/opacity)*/

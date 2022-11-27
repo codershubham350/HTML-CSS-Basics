@@ -1,0 +1,136 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    height: 100%;
+    width: 600px;
+}
+
+/* Flex Container comprises of 
+align-content, align-items, flex-direction, flex-flow,
+flex-wrap, justify-content
+*/
+
+/* Flex Items comprises of
+align-self, flex, flex-basis, flex-grow, flex-shrink, order*/
+
+.itemA {
+    padding: 2rem;
+    background-color: coral;
+    margin: 10px;
+    /* align-self: center; */
+    /* flex-basis: 200px; */
+    /* flex-shrink: 2; */
+    order: 2;
+}
+
+.itemB {
+    padding: 2rem;
+    background-color: dodgerblue;
+    margin: 10px;
+    /* align-self: flex-end; */
+    order: 3;
+}
+
+.itemC {
+    padding: 2rem;
+    background-color: crimson;
+    margin: 10px;
+    /* align-self: stretch; */
+    /* flex-shrink: 3; */
+    order: 1;
+}
+
+.itemD {
+    padding: 2rem;
+    background-color: seagreen;
+    margin: 10px;
+    order: 4;
+}
+
+.wrapper {
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: flex-start;
+    border: solid 2px;
+    height: 30rem;
+    /* flex-direction: column; */
+    
+}
+
+/* align-self accepts the 5 values similar to align-items
+i.e, flex-start, flex-end, center, baseline, stretch.
+
+align-self property helps in aligning a single element,
+And it also overrides the value of align-items assigned
+to all the flex items.
+*/
+
+/* flex-basis property takes a length value
+   flex-basis: 200px; it basically increase the width of the item
+   
+So what will be the difference between 'flex-basis' and
+'width' so the difference is that the flex-basis property
+is used for defining the size of the flex item along the main axis
+i.e, horizontal axis, but when the flex-direction of the container
+is changed from row to column the size will be applied along
+the vertical axisi.e, flex-basis = height of the item.
+
+flex basis have two keyword values i.e, "auto" and "content"
+
+i) The "auto" defines the size depends on the "main size" of the
+element. Also it will still be related to the direction of
+flex container i.e, for Horizontal/ main axis: Width,
+and for Vertical/ cross axis: Height of the item
+
+ii) The "content" defines the size depends on the "content"
+of the element.
+
+Note:- For all values other than "auto" & "content", flex-basis
+is taken the same way as any other normal width or height in
+horizontal or vertical flow of the axis.
+*/
+
+/* "flex-grow" is the another property we have in our flexbox, this 
+property grows the size of the flex item on the basis of
+ the width given to the 'flex container'*/
+
+ div[class^="item"]{
+    /* flex-grow: 1; */
+    /* flex-basis: 200px; */
+    flex: 0 2 100px;
+ }
+
+ /* "flex-grow" property is specified as a number,
+ Default is "0" & negative values are invalid.
+ Ex:- flex-grow: 1;
+ */
+
+ /* "flex-shrink" property is exactly the opposite of "flex-grow"
+ property. It shrinks the flex item based on the width of the other
+ flex items. If the size of the flex items are larger then the
+ 'flex container' then the items will shrink when applying
+ "flex-shrink" property on them.
+ Ex:-  flex-shrink: 2;
+
+ The value of "flex-shrink" specifies the shrinking level
+ compared to the other items.
+
+ Note:- Do not use the flex-wrap property with flex-shrink
+ property, to avoid any shrinking errors. As the items will
+ get wrapped whenever the size of the flex item gets bigger than its
+ container.
+ */
+
+
+ /* "flex"property is the shorthand for the
+ flex-basis + flex-grow + flex-shrink
+ 
+ Ex: -  flex: flex-grow flex-shrink flex-basis
+ flex: 0 2 100px; (order here needs to be preserved/followed).
+ */
+
+ /* "order" property is used for changing the order of
+ all the flexible items
+ 
+ Ex:- order: 2; will make the item align at 2nd position*/

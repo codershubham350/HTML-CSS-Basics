@@ -1,0 +1,19 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+a[href^="g"] {
+    color: red;
+    font-size: 2em;
+    font-style: italic;
+}
+
+/* attribute prefix selector will select all the values
+which is starting with the initialized value
+ex:- element[attribute-name^="attribute-value"]*/
+
+/* if we want to select any attribute which is inside div
+and have href starting with c and target="_blank" then
+div.heading > a[href^="c"][target~="_blank"] */

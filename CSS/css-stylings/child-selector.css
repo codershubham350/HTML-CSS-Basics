@@ -1,0 +1,16 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+div > p{
+    color: #ffcc22;
+    font-style: oblique;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+/* child selector selects the direct child to the parent
+element, not the descendent or the nested child */

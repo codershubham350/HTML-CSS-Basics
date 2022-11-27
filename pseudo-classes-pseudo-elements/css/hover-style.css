@@ -1,0 +1,31 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+div{
+    text-align: center;
+    padding: 25px;
+}
+
+button{
+    width: 200px;
+    margin: 5px;
+    padding: 20px;
+    color: dodgerblue;
+    font-weight: 800;
+    background-color: transparent;
+    border: 3px solid dodgerblue;
+    border-radius: 50px ;
+    text-transform: uppercase;
+}
+
+/* :hover trigger when user interacts with an element with a mouse pointer,
+the hover effect gets triggered */
+
+/* box-shadow: :horizontal/offset-x shadow, vertical/offset-y shadow, blur radius, spread radius, color */
+/* inset -> inside */
+button:hover{
+    box-shadow: 0 0 10px 0 dodgerblue inset, 0 0 20px 0 dodgerblue;
+    border: 3px solid aqua;
+}

@@ -1,0 +1,22 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: brown;
+    font-size: 1.5em;    
+}
+
+span{
+    color: beige;
+    padding: 15px;
+    display: inline-block;
+}
+
+/* applies color to only first line */
+/* ::first-line depends on element width, document width,
+font size, letter spacing, word spacing, it only works for
+display:block, display:inline-block, display:table-caption
+display:table-cell */
+
+span::first-line{
+    color: goldenrod
+}

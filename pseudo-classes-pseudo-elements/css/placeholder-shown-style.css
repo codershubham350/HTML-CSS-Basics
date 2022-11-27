@@ -1,0 +1,18 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+input{
+    width: 20%;
+    border: 2px solid #111;
+    border-radius: 5px;
+    font-size: 12px;
+}
+/* :placeholder-shown will target only those elements whose field's
+placeholder is active once user interacts it loses its activity */
+input:placeholder-shown{
+    border: 2px solid goldenrod;
+    border-radius: 5px;
+}

@@ -1,0 +1,52 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+div {
+    text-align: center;
+    padding: 25px;
+}
+
+.focus-class {
+    width: 200px;
+    margin: 5px;
+    padding: 20px;
+    color: dodgerblue;
+    font-weight: 800;
+    background-color: transparent;
+    border: 3px solid dodgerblue;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+/* :focus pseudo class element has to be selected once to activate
+the focused state, while in :active pseudo class element maintains
+the active state till the user maintains the clicked or pressed state */
+.focus-class:focus {
+    box-shadow: 0 0 10px 0 dodgerblue inset, 0 0 20px 0 dodgerblue;
+    border: 3px solid aqua;
+}
+
+.active-class {
+    width: 200px;
+    margin: 5px;
+    padding: 20px;
+    color: dodgerblue;
+    font-weight: 800;
+    background-color: transparent;
+    border: 3px solid dodgerblue;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+/* :active pseudo class gets triggered when user clicks the button/
+it also gets triggered when user press button with the help of spacebar
+this only works for button tag not for anchor tag in that spacebar dosen't work */
+.active-class:active {
+    box-shadow: 0 0 10px 0 dodgerblue inset, 0 0 20px 0 dodgerblue;
+    border: 3px solid aqua;
+}
+
+/* use Tab to toggle the elements and use spacebar to trigger the active event */

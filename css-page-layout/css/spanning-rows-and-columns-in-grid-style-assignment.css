@@ -1,0 +1,47 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    height: 100%;
+    width: 600px;
+}
+
+div {
+    background-color: darkgoldenrod;
+    text-align: center;
+    border: solid 2px khaki;
+    padding: 15px;
+    font-size: 1.4rem;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 3rem;
+    justify-content: center;
+    grid-gap: 10px;
+}
+
+.divA {
+    grid-column: 1/span 5;
+}
+
+.divB {
+    grid-row: 2/span 2;
+    height: 150px;
+}
+
+.divC {
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: span 2;
+}
+
+.divD {
+    grid-row: span 2;
+}
+
+.divH {
+    grid-column: span 5;
+}

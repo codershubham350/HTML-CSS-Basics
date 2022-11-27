@@ -1,0 +1,29 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+img{
+    margin: 110px;
+    width: 400px;
+    border: solid 10px goldenrod;
+    /* transform: skewX(0deg) skewY(-20deg); */
+    transform: skew(-20deg);
+}
+
+/* skew() is basically taking opposite sides of an 
+element and pushing/pulling them in different directions
+based on given angle.
+
+we can use skew as:-
+transform: skewX(0deg) skewY(-20deg);
+
+or we can use the shorthand property as:-
+transform: skew(0deg, -20deg);
+               x-axis, y-axis 
+
+If we define only one vale then:
+transform: skew(-20deg);
+               x-axis
+*/

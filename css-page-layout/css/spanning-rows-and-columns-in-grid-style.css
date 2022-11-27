@@ -1,0 +1,86 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    height: 100%;
+    width: 600px;
+}
+
+div {
+    background-color: darkgoldenrod;
+    text-align: center;
+    border: solid 2px khaki;
+    padding: 15px;
+    font-size: 1.4rem;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 3rem;
+    justify-content: center;
+    grid-gap: 10px;
+    /* column-gap: 10px;
+    row-gap: 10px; */
+}
+
+.divA{
+    /* grid-column-start: 2;
+    grid-column-end: span 3; */
+    grid-column: 1/span 5;
+}
+
+.divB{
+    /* grid-row-start: 1;
+    grid-row-end: 4; */
+    grid-row: 2/span 2;
+    height: 150px;
+}
+
+.divC{
+    grid-column: span 3;
+}
+/* If we want to stretch the grid row lets suppose from start
+of the column to end of the column so we can do that by
+using properties such as grid-column-start and grid-column-end
+
+But if we are not sure how many column lines are there then
+we can use "span" to calculate how many columns to span.
+
+Ex:-  grid-column-end: span 5; so now you can get to know
+how many columns have been spanned, but "span" keyword
+will not calculate the grid column lines.
+*/
+
+/*The shorthand synatx for grid-column-start and
+grid-column-end we can use grid-column and for 
+ grid-row-start and grid-row-end we can use grid-row.
+
+ Ex:- grid-column-start: 2;
+grid-column-end: span 3; we can short the code using grid-column
+as
+ grid-column: 2/5; i.e, Seperate starting & ending value with
+ a slash (/), we can also Insert "span" keyword between "/"
+ & ending values.
+
+ Ex:- If we want to span 3 columns so we can do as
+ grid-column: 2/span 3;
+*/
+
+/* Spanning of elements is very useful with grids, as you
+can create a perfect web layout in a consistent manner. */
+
+/* If in .divC{ grid-column: span 3; } if we do not define
+start then by default it will start from it's current position.
+
+Ex:- If we do grid-column: 2/span 3; or grid-column: span 3;
+for .divC{} then both syntax will be equivalent to each other.
+*/
+
+.divD{
+    grid-row: span 2;
+}
+
+.divH{
+    grid-column: span 5;
+}

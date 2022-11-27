@@ -1,0 +1,40 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    height: 100%;
+}
+
+/*CSS provides two time measurement units seconds "s" and
+milliseconds "ms" these properties are used where duration
+is required like animation or transition
+1 second = 1000 milliseconds
+0.5s/500ms
+*/
+
+div{
+    background-color: seagreen;
+    height: 14rem;
+    width: 14rem;
+    border-radius: 7em;
+}
+
+div:hover{
+    background-color: orangered;
+    transition: 0.8s; /*0.8s or 800ms*/
+}
+
+/*seconds and milliseconds are basically used with tansition
+or animation properties like:
+
+transition: background-color 0.2s ease-out;
+transition: background-color 200ms ease-out;
+transition: background 0.2s ease,padding 0.5s liner;
+transition: all 0.5s ease;
+
+animation: moveit 0.3s linear 300ms infinite alternate;
+animation: moveit 300ms linear 0.3s infinite alternate;
+*/
+
+/*Note: Time values cannot be negative numbers, they must always
+be positive*/

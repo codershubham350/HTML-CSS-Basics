@@ -1,0 +1,40 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+/* animation-name: my-animation; // name we define on @keyframes
+animation-duration: 3s; // Time to complete one cycle.
+                        // Time value in "s" or "ms"
+                        // Higher value = Slower speed
+                        // Lower value = Higher speed
+
+@keyframes my-animation{
+    CSS Rules;
+}
+*/
+
+.myDiv{
+    border: solid 2px grey;
+    width: 600px;
+    height: 50px;
+    padding: 10px;
+}
+
+.loader{
+    background-color: orangered;
+    width: 10px;
+    height: 50px;    
+    animation: scale-animation 10s infinite;
+}
+
+@keyframes scale-animation {
+    50%{
+        background-color: goldenrod;
+    }
+    100%{
+        width: 600px;
+        background-color: darkgreen;
+    }
+}

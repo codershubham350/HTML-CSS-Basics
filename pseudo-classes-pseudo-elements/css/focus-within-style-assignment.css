@@ -1,0 +1,16 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+.prompt-msg{
+    display: none;
+}
+
+/* :focus class will target the individual element/
+whereas :focus-within will select the descendant/child element */
+.container:focus-within .prompt-msg{
+display: block;
+color: brown;
+}

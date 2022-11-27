@@ -1,0 +1,41 @@
+/* In CSS there are two types of units
+1) Absolute units(fixed units) :- px, pt, cm, mm, in, pc, etc.
+2) Relative units :- em, rem, %, ex, ch. vw, vh, vmin/vmax, etc. */
+
+/*Character(ch) lets you limit the width of text elements
+by character count.*/
+
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: salmon;
+}
+
+input{
+    border-radius: 0.6rem;
+    font-size: 2em;
+    margin: 2rem;
+    padding: 0.4rem;
+    width: 15ch; 
+}
+
+/* "ch" unit sets the width of characters considering the space
+taken by the character "0"
+Ex:-    width: 10ch;  /It will make space for only 10 digits/
+so it will take 0-9 characters(it makes space in numerical order)
+so there might be scenario in alphabetical it can take many alphabets
+*/
+
+p{
+    font-size: 1.3rem;
+    width: 50ch;
+}
+
+/*If we take example of p{font-size:1.3rem;width:50ch;}
+it will take equivalent length of 50 zeroes for this font,
+in this font size.
+*/
+
+/*It is good practice that we declare parent container
+with some desired width & then you can assign width
+in "ch" to inner text elements.*/

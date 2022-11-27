@@ -1,0 +1,98 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+/* Basic syntax for media query
+
+@media rule condition
+{
+    CSS Rule 1
+    CSS Rule 2
+    CSS Rule 3
+}
+
+Ex:-
+
+ @media rule media type(screen, all, print, speech) logical-operator(and, not, only) (breakpoint[min-width, max-width]) logical-operator (orientation: [landscape, portrait etc]){
+    CSS Rules
+ }
+
+ simple way to write basic media-query is:-
+ @media screen and (min-width: 30em) and (orientation: landscape){
+    CSS Rules
+ }
+*/
+
+/* @media query plays an important role while designing responsive
+web layouts*/
+
+h1{
+    color: dodgerblue;
+    font-size: 3rem;
+}
+
+button{
+    background-color: dodgerblue;
+    border: 0;
+    color: #fff;
+    padding: 8px;
+    width: 100px;
+    border-radius: 15px;
+}
+
+/*Whenever screen size reaches 450px or less below styles will be applied*/
+@media screen and (max-width: 450px){
+    body{
+        text-align: center;
+    }
+    h1 {
+            color: goldenrod;
+            font-size: 2.5rem;
+        }
+    button {
+            background-color: gold;
+            color: #333;
+    }
+
+    p{
+        font-size: 0.8rem;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+        body {
+                text-align: right;
+            }
+        
+            h1 {
+                color: chocolate;
+                font-size: 2rem;
+            }
+        
+            button {
+                background-color: chocolate;
+                color: #fff;
+            }
+        
+            p {
+                font-size: 0.8rem;
+                font-family: 'Times New Roman', Times, serif;
+            }
+}
+
+/* Media query is a CSS technique which is introduced in CSS3.
+It uses the @media rule that includes block of CSS properties.
+It is the key part of designing the responsive web layouts
+depending on the viewports of the smaller devices.*/
+
+/* In order to define media query:-
+We first give the @media rule, then we specify the media type.
+Then we specify the characteristics & parameters of the device
+such as screen resolution or max/min width & height etc.
+
+@media screen and (min-width: 30em)
+*/

@@ -1,0 +1,58 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: khaki;
+    height: 100%;
+}
+/*By using padding property we are applying padding to
+all the sides i.e, top, right, bottom, left*/
+
+/* Padding is used if we want to create space between an element's border
+and it's content, that is when we define the padding property*/
+
+/*If we want to apply seperate padding for all the sides
+we can use the padding-top, padding-right, padding-bottom,
+padding-left*/
+div{
+    border: solid 5px orangered;
+    /* padding: 50px; */
+    /* padding-top: 50px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    padding-left: 150px; */
+    padding: 50px 30px;
+    width: 350px;
+}
+
+h1{
+    border: solid 5px;
+    padding: 10%;
+    margin:0;
+}
+
+/*Shorthand way to apply padding to all the four sides is
+padding: top, right, bottom, left*/
+
+/* If we define only three properties to padding
+then padding style will apply as
+
+padding: top, right-left, bottom
+*/
+
+/* If we define only two properties to padding
+then padding style will apply as
+
+padding: top-bottom, right-left
+*/
+
+/* If we define padding using "%" unit then it works differently,
+It considers the parent element's width
+
+i.e., parent's div width here is = 332.667px
+and 10% of 332px is = 33.26px 
+this amount of padding will be applied in the h1 element
+
+In case we take parent's div width here is = 350px
+ and 10% of 350px is=35px this amount of padding will be
+ applied in the h1 element
+*/

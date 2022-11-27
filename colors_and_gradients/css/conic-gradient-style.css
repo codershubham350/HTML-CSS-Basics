@@ -1,0 +1,66 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    font-size: 1.5em;
+}
+
+div{
+    margin: 3em;
+    padding: 10em;
+    border-radius: 50%;
+    background: conic-gradient(
+        #6df ,
+        #03a ,
+        #6df 100grad
+    );
+}
+
+/* In conic gradient colors get spread equally around the
+element from the center point, by default it rotates
+from 0 degree to 360 degree, whereas
+In radial gradient colors emerges from the center of the
+element.
+*/
+
+/* conic gradient starts from 0 degree by default
+and it's look like a cone which is viewed from a top */
+
+/* In radial-gradient() and in conic-gradient() from the
+center/origin of the gradient can be anywhere within, or 
+even outside, the element. 
+By default the position of the origin point is
+50%, 50%*/
+
+/* In conic gradient we can also specify the degree
+and angle for the center/origin by using
+  background: conic-gradient(from 60deg at 40% 30%,
+      #6df,
+      #03a); */
+
+/* In conic-gradient if we want to exclude the bump
+then we can define our style as below where then
+ending index would have the same color property that of
+starting index/of the end index
+  background: conic-gradient(#6df,
+      #03a,
+      #6df); */
+
+/* In css we have a new color-stop properties which is known as
+"turn" 
+Note:- "turn" is the singular word. There is no space between
+the number and it's unit e.g. 2.5 turn
+
+Ex:-  background: conic-gradient(#6df,
+     #03a,
+     #6df 0.4turn);
+
+We can also specify the color -stop in terms of
+rad/radian i.e.
+1 rad/ radian = (180/π)°
+1 rad/ radian = 57.3°
+1 grad = (1/400)%
+
+A positive value goes clock-wise and a negative value goes
+anti-clockwise/counter-clockwise
+*/

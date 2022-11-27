@@ -1,0 +1,60 @@
+/* In CSS there are two types of units
+1) Absolute units(fixed units) :- px, pt, cm, mm, in, pc, etc.
+2) Relative units :- em, rem, %, ex, ch. vw, vh, vmin/vmax, etc. */
+
+/*viewport units are used to customize the layout that fits
+well on the screen*/
+
+/*There are four viewport based units: vw, vh, vmin, vmax*/
+
+/*Viewport Width(vw) it is based on the width of the viewport
+and the value of 1vw = 1% of the viewport width.*/
+
+
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: salmon;
+}
+
+/* div{
+    background-color: burlywood;
+    height: 300px;
+    width: 60vw;
+} */
+
+.parent-percentage-div{
+    background-color: burlywood;
+    height: 150px;
+    width: 50%;
+    padding: 50px 0;
+    margin: 30px;
+
+}
+
+.child-percentage-div{
+    background-color: chocolate;
+    height: 150px;
+    width: 80%; /*Here 80% child's width is relative to parent's 50% width*/
+}
+
+.parent-viewport-div {
+    background-color: burlywood;
+    height: 150px;
+    width: 50%;
+    padding: 50px 0;
+    margin: 30px;
+
+}
+
+.child-viewport-div {
+    background-color: chocolate;
+    height: 150px;
+    width: 80vw; /*Here 80vw of child's width is depenedent on screen/browser viewport size */   
+}
+
+/*Note:- "vw" unit removes the dependency of any parent element
+and allows sizing based on the viewport size of the browser*/
+
+/* A "%" length is relative to parent element width, &
+a "vw" width is relative to the browser window width.*/

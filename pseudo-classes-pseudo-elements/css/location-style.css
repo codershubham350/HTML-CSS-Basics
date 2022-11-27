@@ -1,0 +1,36 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+/* :any-link selects hyperlinks wheteher they are visited or not
+also it matches all the anchor tag which have 'href' attribute in them */
+/* a:any-link{
+    color: coral;
+} */
+
+/* :link will select all the anchor tag which are not yet visited */
+a:link{
+    color: coral
+}
+
+/* :visited will select those links which are already visited by user */
+a:visited{
+color: grey
+}
+
+/* :target will target the unique element which has the 
+matching id as URL */
+p:target{
+color: brown;
+background-color: goldenrod;
+border: 2px solid darkgoldenrod;
+border-radius: 3px;
+}
+
+p:target span{
+    color: brown;
+    font-size: 1.5em;
+    font-style: italic;
+}

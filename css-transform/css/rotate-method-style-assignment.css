@@ -1,0 +1,44 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: chocolate;
+    text-transform: uppercase;
+    padding-top: 3em;
+    line-height: 62px;
+    perspective: 1000px;
+}
+
+.front, .back{
+    background-color: #fff;
+    border: solid 1px chocolate;
+    height: 200px;
+    width: 200px;
+}
+
+/*  transform-style: preserve-3d; specifies how the 
+elements/nested elements should be displayed in 3D space*/
+
+.cube{
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+    height: 200px;
+    transform-style: preserve-3d;
+    transition: 1.55s;
+}
+
+.back{
+    transform: rotateX(-90deg) translateZ(-100px);
+}
+
+.front{
+    transform: translateZ(100px);
+}
+
+h1{
+    padding-top: 40px;
+}
+
+.cube:hover{
+    transform: rotateX(90deg);
+}

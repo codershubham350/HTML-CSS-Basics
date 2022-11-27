@@ -1,0 +1,23 @@
+body{
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#ccc;
+    font-size: 1.5em;    
+}
+/* 
+rgb(red, green, blue) here it is known as color depth it is measured
+in bits that indicates how many colors are available for each pixel */
+
+/* True color supports 24 bits of color i.e. 8 bits of Red, 
+8 bits of Green and 8 bits of Blue. so here rgb value ranges
+form 0 to 255, 0 means 0% saturation and 255 means 100% saturation*/
+p{
+    color: rgba(218, 165, 32,40%)
+}
+
+/* if we want to add opacity to the color then we need to
+use rgba where it stands for Red,Green,Blue,Alpha/opacity of final color */
+
+/* In RGB each channel i.e, Red, Green, Blue is of 8 bits
+thats why the min and max value we can assign to RGB is
+0 to 255 in total 256 i.e. 8 bits */

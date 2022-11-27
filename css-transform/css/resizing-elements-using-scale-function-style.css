@@ -1,0 +1,64 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+/* scaleX() it takes a unitless number value as parameter.
+and by default its value is 1.*/
+.div1{
+    padding: 25px;
+    background: crimson;
+    height: 50px;
+    width: 50px;
+    margin: 100px 0 0 200px;
+    /* transform: scaleX(1) scaleY(-2); */
+    transform: scale(2, 2);
+}
+
+.div2 {
+    padding: 25px;
+    background: dodgerblue;
+    height: 50px;
+    width: 50px;
+    margin: 100px 0 0 200px;
+    /* transform: scaleX(2) scaleY(2) scaleZ(2); */
+    transform: perspective(200px) scale3d(2, 1.5, 3) rotate3d(2,3,5, 50deg);
+}
+
+/* If we want to scale any element respective to x-axis we
+can scale them using transform: scaleX(value_greater_than_one);
+similar is the case for y-axis can scale them using 
+transform: scaleY(value_greater_than_one);
+
+If we scale the element respective to x-axis using the 
+negative numbers then we can use transform: scaleX(negative_value);
+similar is the case for y-axis we can scale them using 
+transform: scaleY(negative_value);
+
+and with the negative value we cam see that the element
+gets flipped on the x-axis.
+
+If we want to scale both the elements i.e, x-axis and y-axis
+we can use the shorthand property i.e,
+transform: scale(value_greater_than_one_for_x_axis,value_greater_than_one_for_y_axis); [positive value]
+
+or if we want to scale x-axis and y-axis with the same values
+we can use transform: scale(value_greater_than_one);
+
+In case we want to flip the element on both the axis
+we can give negative values to the x-axis and y-axis
+Ex:- transform: scale(-3, -2.5);
+
+For 3D transformation we can do as:-
+transform: scaleX(2) scaleY(2) scaleZ(2);
+or we can use the shorthand property i.e,
+transform: scale3d(value_greater_than_one_x_axis, value_greater_than__one_y_axis, value_greater_than__one_z_axis); [positive value]
+also we can use it for negative values as well
+
+*/
+
+/* sclae() function defines a transformation that resizes an 
+element on the 2D plane i.e., it will make the element big or
+small. It resizes the element's horizontal & vertical
+dimensions on different scales.*/

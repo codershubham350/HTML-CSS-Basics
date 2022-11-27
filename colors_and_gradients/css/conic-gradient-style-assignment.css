@@ -1,0 +1,21 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    font-size: 1.5em;
+}
+
+.overlay-gradient:hover::after{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 550px;
+    height: 300px;
+    background: conic-gradient( at 50% 0,
+        #ff0,#080
+    );
+    margin: 8px;
+    /*mix-blend-mode is used to blend the gardient with the image*/
+    mix-blend-mode: overlay;
+}

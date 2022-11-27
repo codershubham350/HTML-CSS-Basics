@@ -1,0 +1,84 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+/*
+.classname{
+    CSS Rules
+}
+
+@media query (breakpoint 450px){
+    .classname{
+        CSS Rules
+    }
+}
+
+*/
+
+h1 {
+    color: dodgerblue;
+    font-size: 3rem;
+}
+
+button {
+    background-color: dodgerblue;
+    border: 0;
+    color: #fff;
+    padding: 8px;
+    width: 100px;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        text-align: center;
+    }
+
+    h1 {
+        color: goldenrod;
+        font-size: 2.5rem;
+    }
+
+    button {
+        background-color: gold;
+        color: #333;
+    }
+
+    p {
+        font-size: 0.8rem;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    img{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    body {
+        text-align: right;
+    }
+
+    h1 {
+        color: chocolate;
+        font-size: 2rem;
+    }
+
+    button {
+        background-color: chocolate;
+        color: #fff;
+    }
+
+    p {
+        font-size: 0.8rem;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+/*Here media query will save resources, like when this
+page is being opened in smaller devices, the images will
+not be loaded, as the media query will not allow it to
+display. Thus, the resources which are occupied by the 
+device for viewing the images, remain free.*/

@@ -1,0 +1,55 @@
+/* In CSS there are two types of units
+1) Absolute units(fixed units) :- px, pt, cm, mm, in, pc, etc.
+2) Relative units :- em, rem, %, ex, ch. vw, vh, vmin/vmax, etc. */
+
+/*Root Ephemeral(rem) unit is based upon the font size value of
+the root element, i.e, <html> itself*/
+
+/*If <html> dosen't have any font size specified, the browser
+will take the default font size i.e, 16px*/
+
+/*By default 1rem = 16px*/
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: salmon;
+}
+
+.parent {
+    font-size: 20px;
+}
+
+/* .child {
+    font-size: 2rem;
+} */
+
+/*Here we have not applied any font-size to root i.e,
+<html> element so here .child{font-size: 2rem;}
+will get multiplied to the browser's default
+font size i.e, 16px
+so here 2rem x 16px = 32px will result in child font size*/
+
+.child {
+    font-size: 24px;
+    font-size: 2rem;
+}
+
+html{
+    font-size: 12px;
+}
+
+/*Here we have given font-size to root i.e,
+<html> element so here .child{font-size: 2rem;}
+will get multiplied to root element font size i.e, 12px
+so here 2rem x 12px = 24px will result in child font size*/
+
+/*Note some browsers dosen't support 'rem' unit
+so in order to avoid any issues we need to use a
+fallback method like below:
+
+.child{
+    font-size: 24px; /fallback for browsers not supporting rem/
+    font-size: 2rem;
+}
+as both are equivalent in there own parameters
+*/

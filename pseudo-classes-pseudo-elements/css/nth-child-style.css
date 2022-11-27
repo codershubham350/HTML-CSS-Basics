@@ -1,0 +1,53 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: brown;
+    font-style: italic;
+    text-align: center;
+}
+
+/* grid-template-columns used to specify width for grid layout */
+.container{
+    display: grid;
+    margin: 3em;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-item{
+    background-color: burlywood;
+    font-size: 2em;
+    padding: 30px;
+    margin: 5px;
+}
+
+/* :nth-child() used to select the element based on some arguments */
+/* it also follows internal indexing maintained by browser's DOM' */
+/* if we pass single non-negative number it will count the elements 
+and apply the specified styles to them   */
+/* :nth-child(2n) here 'n' denotes '0' so 2n is 2xn*/
+/* :nth-child(3n+1) here 'n' denotes '0' so 3n+1 is 3xn + 1*/
+
+/* :nth-child() for positive elements goes from top to bottom whereas,
+ :nth-child() for negative elements goes from bottom to top */
+
+ /* if we want to select element based on range ex: start at 3
+ till end at 8, below :nth-child(n+3):nth-last-child(n+5)
+ will start element at position 3 and end element at position 8 */
+/* .grid-item:nth-child(3n+2):nth-last-child(n+5){
+    background-color: beige;
+} */
+
+/* In order to select top 3 elements and bottom 3rd and 1st elements */
+.grid-item:nth-child(-1n+3),
+.grid-item:nth-last-child(3),
+.grid-item:nth-last-child(1) {
+    background-color: beige;
+}
+
+/* difference between Pseudo elements and Pseudo classes
+
+Pseudo Elements -> It is used to style specific part of an element
+Ex:- element::pseudo_element
+
+Pseudo Classes -> It is used to style the whole element 
+Ex:- element:pseudo_class*/

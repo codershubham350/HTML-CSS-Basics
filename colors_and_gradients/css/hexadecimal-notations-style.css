@@ -1,0 +1,55 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    font-size: 1.5em;
+}
+
+/* How to define Hex code
+-> Must start with a hash sign
+-> Followed by 6 digits of the hexadecimal value
+Ex: #7d 93 ee
+   #RR  GG BB
+*/
+
+p {
+    color: #31d2a462;
+
+}
+
+/* Loweset value is #000000 that is the darkest version
+and the Highest value is #ffffff that is the lightest version */
+
+/*Hex code are not case sensitive but ideally we should keep
+them in lower case*/
+
+/*In order to give Red in hexadecimal use #ff 00 00
+In order to give Green in hexadecimal use #00 ff 00
+In order to give Blue in hexadecimal use #00 00 ff
+*/
+
+/*Short hand notation for Red in hexadecimal use #f 0 0
+Short hand notation for Green in hexadecimal use #0 f 0
+Short hand notation for Blue in hexadecimal use #0 0 f
+*/
+
+/* Note:- in order to convert 6 digit hex code to 3 digit hex code
+we need to remove duplicate values from the code */
+
+/*In order to add opacity to hexadecimal values
+#RRGGBBAA we need to use i.e #ff ff ff ff*/
+
+/* Hexadecimal values range from 0-9 a-f */
+
+/*Example:- we have values for Red, Green and Blue as
+69, 16 and 182 so the hex value for Red, Green and Blue 
+will be 69/16, 16/16 and 182/16 so the values we get are
+
+69/16 i.e quotiant as 4 and remainder as 5 so hex value is #45
+16/16 i.e quotiant as 1 and remainder as 0 so hex value is #10
+182/16 i.e quotiant as 11 and remainder as 6 so hex value is #116 and
+in hexadecimal 11 is denoted with b so it will be #b6
+
+ so total it comes for Red, Green Blue for 69 16 182 i.e.
+ rgb(69,16,182)as #4510b6 */
+

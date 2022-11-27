@@ -1,0 +1,37 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+h1{
+    color:aqua;
+    text-align: center;
+}
+.select-menu div{
+    color: yellowgreen;
+    display: none;
+    border: 3px solid goldenrod;
+    border-radius: 15px;
+    padding: 0 5px 5px;    
+}
+
+.select-menu a{
+    text-decoration: none;
+    font-size: 1.5em;
+    font-style: italic;
+    color: fuchsia;
+    padding: 10px;
+    margin: 20px 0;
+    display: inline-block;
+}
+.select-menu div:target{
+    display: block;
+    margin-top: 0.5em;
+    padding: auto;
+    font-style: oblique;
+    font-size: 1.5em;
+    color: forestgreen;    
+}
+span{
+    color: crimson;
+}

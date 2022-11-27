@@ -1,0 +1,54 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    height: 100%;
+    width: 600px;
+}
+
+h1{
+    background-color: goldenrod;
+    text-align: center;
+    line-height: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    margin-bottom: 25px;
+}
+
+.firstColumn{
+    background-color: #033;
+    border: solid 1px seagreen;
+    height: 100px;
+    width: 136px;
+    padding: 1.5rem;
+    margin-right: 20px;
+    float: left;
+}
+
+.secondColumn {
+    background-color: #033;
+    border: solid 1px seagreen;
+    height: 100px;
+    width: 136px;
+    padding: 1.5rem;
+    float: left;
+}
+
+.thirdColumn {
+    background-color: #033;
+    border: solid 1px seagreen;
+    height: 100px;
+    width: 136px;
+    padding: 1.5rem;
+   margin-bottom: 25px;
+   float: right;
+}
+
+footer{
+    background-color: goldenrod;
+    padding: 10px;
+    clear: both;
+}
+
+/* Floating and clearing techniques are majorly used in creating
+the basic structure of any layout we wish to create.*/

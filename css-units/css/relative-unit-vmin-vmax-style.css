@@ -1,0 +1,103 @@
+/* In CSS there are two types of units
+1) Absolute units(fixed units) :- px, pt, cm, mm, in, pc, etc.
+2) Relative units :- em, rem, %, ex, ch. vw, vh, vmin/vmax, etc. */
+
+/*viewport units are used to customize the layout that fits
+well on the screen*/
+
+/*There are four viewport based units: vw, vh, vmin, vmax*/
+
+/*Viewport min & max(vmin,vmax) unit is related to min and
+max value of viewport widths or viewport heights.*/
+
+/*"vmin" represents the minimum width and height of the viewport*/
+/*"vmax" represents the maximum width and height of the viewport*/
+
+/* 
+If browsers/viewport height is smaller than it's width then
+1vmin = 1vh
+
+If browsers/viewport width is smaller than it's height then
+ 1vmin = 1vw
+ */
+
+ /* 
+If browsers/viewport height is larger than it's width then
+1vmax = 1vh
+
+If browsers/viewport width is larger than it's height then
+ 1vmax = 1vw
+ */
+
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    height: 100%;
+}
+
+/*
+Ex:- If suppose you have a screen of width 1920px and height
+of 1080px, here width > height of viewport then
+1920px > 1080px so,
+----- vmin will be-----
+1vmin = 1080/100
+      = 10.8px
+
+10vmin = 1080/10
+       = 108px
+
+----- vmax will be-----
+1vmax = 1920/100
+      = 19.2px
+
+10vmax = 1920/10
+       = 192px
+*/
+
+/*
+Ex:- If suppose you have a screen of height 1920px and width
+of 1080px, here height > width of viewport then
+1920px > 1080px so,
+----- vmin will be-----
+1vmin = 1080/100
+      = 10.8px
+
+10vmin = 1080/10
+       = 108px
+
+----- vmax will be-----
+1vmax = 1920/100
+      = 19.2px
+
+10vmax = 1920/10
+       = 192px
+*/
+
+
+/* In Portrait Mode
+1vmax = 1vh
+
+In Landscape Mode
+1vmax = 1vw
+*/
+
+/* If height will be 1600px and width will be 900px
+the, 1vmin = 9px
+10vmin = 90px
+and, 1vmax = 16px
+10vmax = 160px
+*/
+
+/*The value of 'vmin' and 'vmax' change, whenever the browser
+window is resized. */
+
+h1{
+    font-size: 10vmin;
+    text-align: center;
+}
+
+p{
+    font-size: 3vmax;
+    width: 90%
+}

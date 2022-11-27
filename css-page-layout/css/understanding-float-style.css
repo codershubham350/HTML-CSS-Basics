@@ -1,0 +1,83 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    height: 100%;
+}
+
+/* By default when we define element inside a web page, 
+elements have some fixed position but when we assign them
+'float' property then we can move element to any desired
+position*/
+
+div{
+    width: 100px;
+    height: 100px;
+    margin: 1rem;
+    font-size: 1.2rem;
+    border: solid 2px white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    float: right;
+}
+
+/* By using 'float' property we can use following styles:
+inline-end,
+inline-start,
+left,
+none,
+right,
+inherit,
+initial,
+unset
+*/
+
+.ele1{
+    background-color: darkred;
+    float: left; 
+}
+
+.ele2{
+    background-color: darkgoldenrod;
+    float: right;
+}
+
+.ele3{
+    background-color: darkgreen;
+    float: left;
+}
+
+        /* If we apply float, the element will be taken out of 
+        the normal flow and rest of the element will take it's 
+        place i.e, The space occupied by "ele1" is empty
+        as it is removed from the normal flow.
+        
+        The non-floated element will consider the empty space
+        and fill that up.
+
+        We can overlap other elements if we define element using
+        float.
+        */
+
+        /* 'float' is very useful when we want to make a
+        photo gallery, list of icons, Horizontal menu etc.*/
+
+        /* float: initial; will bring element back to
+        it's initial position*/
+
+        /*float: inherit; will simply inherit the float from
+        it's parent element & float: none; will clear
+        out the float applied on the element.*/
+
+        /* The difference between float: initial; and 
+        float: none; is that float: initial is still
+        a floating to it's initial value, but float: none
+        will clear out any type of floating value.  */
+
+        /* Float is also very useful to wrap the text around the 
+        element*/
+
+        p{
+            padding: 20px 0;
+        }

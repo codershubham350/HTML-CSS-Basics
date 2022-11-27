@@ -1,0 +1,37 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+input{
+    display: flex;
+    margin: 20px;
+    width: 25%;
+    border: 1px solid coral;
+    border-radius: 3px;
+}
+
+div{
+    margin: 20px;
+    padding: 25px;
+    background-color: #fff;
+    border: 1px solid coral;
+    color: #111;
+    border-radius: 3px;
+    font-size: 1.5em;
+    width: 40%;
+}
+
+input:read-only{
+    background-color: #999;
+    border: 2px solid #111;
+    color: #111;
+    font-style: italic;
+}
+
+/* by default fields are read-write */
+input, div:read-write{
+    background-color: khaki;
+    border: 1px solid brown;
+}

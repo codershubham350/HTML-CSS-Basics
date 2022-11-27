@@ -1,0 +1,13 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: wheat;
+    font-size: 1.5em;
+    padding: 25px;
+}
+
+/* color values can be defined using color name, hexadecimal, rgb and hsl values.
+color helps us to change the color of text or foreground color of an element */
+p{
+    color:orange
+}

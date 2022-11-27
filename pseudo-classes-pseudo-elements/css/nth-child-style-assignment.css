@@ -1,0 +1,38 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: goldenrod;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+h1{
+    color: #fff;
+}
+
+div{
+    padding: 15px;
+}
+
+table{
+    width: 100%;
+    background-color: #222;
+    border-color: #111;
+}
+
+td{
+    width: 33%;
+    padding: 10px;;
+}
+
+tr:nth-child(1){
+background-color: #444;
+color: #fff;
+font-weight: bold;
+}
+
+/* grouping element using :nth-child() */
+tr:nth-child(2n){
+background-color: #111;
+color: greenyellow;
+}

@@ -1,0 +1,27 @@
+/* In CSS there are two types of units
+1) Absolute units(fixed units) :- px, pt, cm, mm, in, pc, etc.
+2) Relative units :- em, rem, %, ex, ch. vw, vh, vmin/vmax, etc. */
+
+/*Inches(in) is useful unit when you want to display the content
+on the page for printing the output on the page*/
+
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: dodgerblue;
+}
+
+/* Note:- inches are not widely used on frontend as the accuracy
+always depend on the screen of a particular device. The device
+may vary, that may alter the final result- in some cases. */
+
+/*1 inch = 96 px
+         = 2.54 cm*/
+
+.inch{
+    font-size: 0.5in;
+}
+
+.pixel{
+    font-size: 48px;
+}

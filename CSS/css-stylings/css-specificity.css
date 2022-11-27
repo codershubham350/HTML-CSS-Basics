@@ -1,0 +1,29 @@
+body{
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+h1{
+    color: #f23;
+    font-size: 3em;
+    font-family: cursive;
+}
+
+.myHeader{
+    color: blue;
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#myPara{
+    background: rgb(100,50,100);
+}
+
+.para{
+    background: rgb(100,100,0) !important;
+}
+
+p{
+    background: rgb(0,100,200);
+}

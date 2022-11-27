@@ -1,0 +1,16 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+p[class~="myStyle"]{
+    color: #fc1;
+    font-size: 2em;
+    font-style: italic;
+}
+
+/* attribute spaced selector uses ~ it means select any class
+which matches the value after ~ i.e. if it contains any space
+before/after it will still select that vale
+ex:- element[attribute-name~="attribute-value"]*/

@@ -1,0 +1,20 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    font-size: 1.5em;
+}
+
+/*Opacity ranges from 0(as minimum) to 1(as maximum)*/
+/*Opacity property makes an image transparent by lowering
+the opacity value*/
+
+img{
+    opacity: 0.6;
+}
+
+/*For texts we define opacity value in hexcode using color property*/
+p{
+    /* opacity: 0.5; */
+    color: #fc05;
+}

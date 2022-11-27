@@ -1,0 +1,41 @@
+/*Angle measurement unit comprises of 
+deg/degree, rad/radian, turn, grad/gradian*/
+
+/* deg/degree ranges from 0 to 360deg/-360deg 
+Negative degrees go counter-clockwise/anti-clockwise
+Positive degress go clockwise*/
+
+/*rad/radian represents an angle on a circumference of a circle
+in an arc shapewhich is of equal length of the radius of the circle
+1 full circle = 2πrad/360°
+1/2 circle = πrad/180°
+1/2 circle(counter-clockwise) = -πrad/180°
+1rad = 180/π
+     = 57.3°
+*/
+
+/* grad/gradian, a positive grad go clockwise,
+and a negative grad go counter-clockwise/anti-clockwise
+1grad/gradian = 400grad/360°
+100grad/90° or 100grad = 90°
+-200grad/-180° or -200grad = -180°
+*/
+
+/* "turn" is a newer unit in CSS and it means rotation
+1turn = 360°
+2turn = 720°
+*/
+
+/*deg/degree, rad/radian, turn, grad/gradian these units
+are majorly used with the properties like animation,
+transform or gradient such as linear-gradient(),
+radial-gradient(), conical-gradient() and functions
+like skew(), translate(), rotate(), scale()*/
+
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    height: 100%;
+}
+

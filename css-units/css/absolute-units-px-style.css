@@ -1,0 +1,32 @@
+
+/* In CSS there are two types of units
+1) Absolute units(fixed units) :- px, pt, cm, mm, in, pc, etc.
+2) Relative units :- em, rem, %, ex, ch. vw, vh, vmin/vmax, etc. */
+
+/*Pixel(px) is the smallest unit on screen measurement*/
+
+body{
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: dodgerblue;
+}
+
+div{
+    background-color: khaki;
+    color: brown;
+    text-align: center;
+    font-size: 50px;
+    padding: 110px;
+    margin: 30px 50px;
+    width: 200px;
+    height: 150px;
+    border-radius: 50px;
+    /* position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto; */
+}
+
+/*Generally 1 pixel is the 96th part of an inch
+i.e, 1 pixel = 1/96 inches
+50 px = 50 x (1/96) inches*/

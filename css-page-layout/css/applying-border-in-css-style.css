@@ -1,0 +1,59 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    height: 100%;
+}
+
+/* Border of an element is in rectangular shape by default*/
+
+/* Border of an element is defined using:
+ i) border-style
+ ii) border-width
+ iii) border-color*/
+
+ h1{
+    border-style: solid;
+    border-width: 5px; /* It takes Length as well as Keyword values*/
+    color: burlywood;
+    border-color: seagreen;
+}
+
+/* Note:- In the absence of border-color, it will take the
+default color of the element or parent element on which
+the border is applied.*/
+
+/* div{
+    border-style: dashed;
+    border-width: 5px;
+    border-color: crimson;
+} */
+
+p{
+    /* border-style: double;
+    border-width: 5px;
+    border-color: dodgerblue; */
+    border: 5px double dodgerblue;
+    margin: 15px;
+    padding: 15px;
+}
+
+/*There is a shorhand property to apply border-style, border-width
+and border-color in a single place by using border property
+
+Ex:- border: border-width border-style border-color(here sequence dosen't matter)
+border: 5px double dodgerblue;
+*/
+
+/* We can also defined border top, bottom, left, right
+with different styles by using below property*/
+
+div{
+    border-top: 15px solid chocolate;
+    border-bottom: 15px solid chocolate;
+    border-left: 15px solid orange;
+    border-right: 15px solid orange;
+    /*In order to remove sharpness of edges in border, we
+    define border-radius using length properties*/
+    border-radius: 15px; 
+}

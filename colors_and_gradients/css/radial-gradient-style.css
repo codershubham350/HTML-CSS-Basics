@@ -1,0 +1,71 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    font-size: 1.5em;
+}
+
+div{
+    padding: 130px;
+    margin-top: 5em;
+    /* width: 200px;
+    height: 200px;
+    margin-left: 3em; */
+    background: radial-gradient(circle at top left,
+        #6df 20%,
+        #03a 50%,
+        #6df
+    );
+}
+
+/*  background: radial-gradient(#6df 20%,
+      #03a 50%,
+      #6df);
+      
+It will start from the center and moves to the edges of the element,
+fades happen in the equal rate by default.
+By default it will take eliptical, for making it circular
+give equal height and width to the element.
+*/
+
+/*To turn elipse into circle we can also use
+  background: radial-gradient(circle,
+      #6df 20%,
+      #03a 50%,
+      #6df);
+*/
+
+/* If we want to get a gradient circle then, we need 
+to add a property called 'closest-side'
+ background: radial-gradient(circle closest-side,
+     #6df 20%,
+     #03a 50%,
+     #6df);
+
+Also we can have a similar property in ellipse as well
+background: radial-gradient(ellipse closest-side,
+    #6df 20%,
+    #03a 50%,
+    #6df);
+*/
+
+/* The other properties available to the radial-gradients are
+closest-side, closest-corner, farthest-corner,
+farthest-side */
+
+/* if we want to give positioning to the gradient
+        background: radial-gradient(at top left,
+            #6df 20%,
+            #03a 50%,
+            #6df);
+some positioning directions are:-
+-> at top right
+-> at top left
+-> at bottom right
+-> at bottom left
+-> at top
+-> at right
+-> at bottom
+-> at left
+-> at center
+ */

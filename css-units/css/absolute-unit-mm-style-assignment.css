@@ -1,0 +1,16 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: goldenrod;
+}
+
+p{
+    font-size: 7mm;
+    border-top: 10mm solid gold;
+    border-bottom: 10mm solid darkgoldenrod;
+    border-left: 10mm solid goldenrod;
+    border-right: 10mm solid goldenrod;
+    text-align: center;
+    padding: 5mm;
+    margin-top: 40mm;
+}

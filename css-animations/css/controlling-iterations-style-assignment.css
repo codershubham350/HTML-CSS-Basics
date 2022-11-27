@@ -1,0 +1,47 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+.file{
+    position: relative;
+    width: 80px;
+    margin: 100px 0 0 50px;
+    animation-name: myAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.folder1, .folder2{
+    position: absolute;
+    margin-top: 100px;
+    width: 150px;
+}
+
+.folder1{
+    left: 0;
+}
+
+.folder2{
+    right: 0;
+}
+
+@keyframes myAnimation {
+    0%{
+        transform: translate(0px);
+    }
+    25%{
+        transform: translate(120px, -75px) rotate(90deg) scaleX(50%);
+    }
+    50%{
+        transform: translate(240px, -100px) rotate(180deg) scaleX(1%);
+    }
+    75%{
+        transform: translate(360px, -75px) rotate(270deg) scaleX(50%);
+    }
+    100%{
+        transform: translate(480px) rotate(360deg) scale(100%);
+    }
+}

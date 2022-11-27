@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Valid Invalid Pseudo Class Assignment</title>
+    <link rel="stylesheet" href="/pseudo-classes-pseudo-elements/css/input-valid-invalid-style-assignment.css">
+</head>
+
+<body>
+    <form class="myForm">
+        <label>Employee Name:</label><br />
+    <!-- below pattern indicates first letter should be in capital letter
+    and have access to lowercase alphabets plus max range is 40 characters -->
+    <!-- pattern="[A-Z][a-z]{1,40}" means 1st must be capital character rest 39 should be small character -->
+
+    <!-- required attribute identifies that field value cannot be left empty -->
+        <input type="text" pattern="[A-Z][a-z]{1,40}" required><br />
+        <label>Employee Email:</label><br />
+        <input type="email" required><br />
+        <label>Mobile:</label><br />
+        <input type="text" pattern="[0-9]{10}" required>
+        <label>Employee Salary:</label><br />
+        <input type="number" required>
+    </form>
+</body>
+
+</html>

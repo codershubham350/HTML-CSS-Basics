@@ -1,0 +1,43 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+/* @media print is intended for paged matrial & documents, 
+ which are to be viewed on a screen, in print view mode*/
+
+ h1{
+    color: salmon;
+    font-size: 45px;
+    text-align: center;
+ }
+
+ p{
+    font-size: 1.2rem;
+ }
+
+ @media print{
+    h1 {
+            color: teal;
+            font-size: 45pt;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    p{
+        font-size: 16pt;
+        font-family: 'Times New Roman', Times, serif;
+    }
+ }
+
+ /* If the web page contains a lot of colored elements
+ or various functionalities, we can apply "@media print"
+ with common colors shared by all the elements, to save
+ the resources.
+ */
+
+/* The @media screen targets the screens of particular devices
+like smartphones, tablets, PC, laptops etc. While the
+@media print is used for printing media i.e., printing
+the web page layout on paper. This is the major difference
+between these two media types.*/ 

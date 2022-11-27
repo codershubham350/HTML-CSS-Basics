@@ -1,0 +1,61 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    height: 100%;
+}
+
+/* Collapsing margin here means when top and bottom margin
+of two block level elements, sometimes get combined i.e, collapsed
+into single margin */
+
+h1{
+    border: solid 5px dodgerblue;
+    margin: 20px -5px 30px -5px;
+}
+
+p{
+    border: solid 5px;
+    margin: -30px -5px 25px -5px;
+}
+
+/* Here if we give h1{margin-bottom:60px;}
+and p{margin-top:20px;} so eventually we would
+expect a margin between h1{} and p{} should
+be 60px + 20px = 80px but both margin would 
+collapse instead and leave a space between
+h1{} and p{} as of 60px and this behavoir
+is known as margin collapsing*/
+
+/*In order to avoid margin collapsing, we can use
+flexbox or grid layout or even padding in some cases.*/
+
+/* margin is basically used to apply distance between
+sibling child elements and not to increase gap between 
+parent-child elements.*/
+
+/*Negative margin allow us to reduce space between two elements
+
+It lets us pull child inside its parent's bounding box, or
+reduce the space between siblings until they overlap
+*/
+
+/* Note:- whichever margin i.e, between positive or negative 
+will show its significance*/
+
+/* If we take h1{margin: 20px;} and 
+p{margin: -20px;} then both the margin 
+will cancel out each other 20px - 20px = 0px*/
+
+/* Negative margins are used when you want to remove unwanted
+margins, e.g, applying negative margin to a parent element
+to cancel out unwanted margin.*/
+
+/* Margins never collapse horizontally, because it simply
+does not satisfy the conditions which make a margin collapse
+horizontally. Only vertical margins get collapsed*/
+
+/*Collapsing of margins happens when two vertical margins
+come in contact with one another. The greater margin
+overrides the smaller, leaving out single margin value
+which is the greater one.*/

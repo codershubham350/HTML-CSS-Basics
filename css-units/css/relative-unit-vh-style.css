@@ -1,0 +1,53 @@
+/* In CSS there are two types of units
+1) Absolute units(fixed units) :- px, pt, cm, mm, in, pc, etc.
+2) Relative units :- em, rem, %, ex, ch. vw, vh, vmin/vmax, etc. */
+
+/*viewport units are used to customize the layout that fits
+well on the screen*/
+
+/*There are four viewport based units: vw, vh, vmin, vmax*/
+
+/*Viewport Height(vh) unit is similar to "%" unit,
+the value of 1vh = 1% of the viewport height.*/
+
+
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    height: 100%;
+}
+
+html{
+    height: 100%;
+}
+
+/*Note:- "vh" works like a "%" unit, but setting up
+the height in "vh" & "%" is very different.*/
+
+h1{
+    display: inline-block;
+    font-size: 3rem;
+    border: solid burlywood;
+    width: 42vw;
+    height: 70vh;
+    margin: 15vh auto;
+   /*Here margin value is calculated based on 
+   (Visible area height - Given height)/2   
+   (100vh(total screen height) -70vh(height given))/2
+   = 15vh(margin height for top-bottom)
+   */ 
+}
+
+h2 {
+    display: inline-block;
+    font-size: 3rem;
+    border: solid burlywood;
+    width: 42vw;
+    height: 70%;
+    margin: 15vh auto;
+    /*Here in margin height value is not getting applied
+    and the reason is "%" value is relative to it's parent 
+    element (here parent element id body{}, and body again 
+    have a parent element html{})*/
+}

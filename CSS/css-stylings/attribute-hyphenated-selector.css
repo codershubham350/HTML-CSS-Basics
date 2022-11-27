@@ -1,0 +1,28 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+[class|="my"] {
+    color: #fe4;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+div ~ p[class|="style"]{
+    color: blue;
+    font-size: 1.5em;
+}
+
+
+/* attribute hypernated selector(|) will select all the values
+which contains exactly same value or the value follwed by
+hyphen(-) sign 
+ex:- [attribute-name|="attribute-value"]*/
+
+/* apply css to all siblings paragraphs of div with class name
+using hyphenated attribute
+div~p[class|="style"] {} here ~ is used to select sibling elements */
+
+

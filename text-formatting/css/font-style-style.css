@@ -1,0 +1,22 @@
+/* font-style has basically three values italic, oblique, normal */
+body{
+background-color: #333;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: #ccc;
+font-size: 1.5em;
+}
+
+.my-paragraph-1{
+    font-style: oblique;
+    color: salmon;
+}
+
+/* Note: italic font style are more cursive and less slant
+whereas oblique font style are more sloped and less slant */
+
+/*'italic' is the special version of the font, whereas
+oblique is the regular version that is bit inclined*/
+.my-paragraph-2{
+    font-style: italic;
+    color: deepskyblue;
+}

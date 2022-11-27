@@ -1,0 +1,44 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    height: 100%;
+}
+
+/* "clearfix" approach makes use of "::after" pseudo element,
+by using this approach we can clear the content & avoid the
+collapsing.
+*/
+
+div{
+    border: solid 4px dodgerblue;
+}
+
+img{
+    margin: 1rem;
+    float: left;
+}
+
+p{
+    padding: 1rem;
+    float: left;
+}
+
+/* By using below approach we can avoid collapsing of the
+parent element while we can still make child element float*/
+.clearfix::after{
+    content: '';
+    visibility: hidden;
+    clear: both;
+  /* When we use here display: block; i) the container gets cleared,
+  and ii) there is now no more collapsing*/  
+    display: block;
+}
+
+/* The above method will apply a small bit of hidden content
+as the parent container clears the floats. */
+
+/* "clearfix" is a way which tells the element to automatically
+clear its child elements, so that there is no need for you
+to add the additional markup inside the document in order to
+clear the parent container.*/

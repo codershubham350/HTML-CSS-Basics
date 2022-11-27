@@ -1,0 +1,23 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+label{
+    margin-left: 2px;
+    font-size: 0.75em;
+}
+/* :enabled pseudo class represents any enabled HTML document
+i.e. click, focus, type */
+/* :disabled pseudo class represents any disabled HTML document
+i.e. click, focus, type it works for fields having 'disabled' attribute*/
+
+input:enabled{
+    background-color: #333;
+    color: goldenrod;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 2px;
+}

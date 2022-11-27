@@ -1,0 +1,34 @@
+body{
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#ccc
+}
+
+h1{
+    color: burlywood;
+    text-align: center;
+    font-size: 2.3em;
+}
+
+/* line-height property can accept keyword values, as well as the
+number length or % values */
+
+/* line-height also depends on the size of the font */
+/* If we define font-size and line-height both then
+what we get the value would be product of line-height x font-size */
+
+/* best value to describe line height is by using 'unitless line-height'
+as if we use length or percentage value then there might me scenario
+that it can leave extra spaces between the lines after computing
+the line height */
+p{
+    line-height: 1.7; /*Unitless line-height*/
+    font-size: 1.2em;
+}
+
+address{
+    line-height: 1.6;
+    font-size: 20px;
+    /* here we get line-height x font-size i.e. 1.6 * 20px = 32px line-height */
+    color: coral;
+}

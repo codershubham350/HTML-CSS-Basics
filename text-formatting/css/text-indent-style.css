@@ -1,0 +1,24 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: wheat;
+    font-size: 1.5em;
+    padding: 25px;
+
+}
+
+/* text-indent indents the text either in left or right direction
+text-indent takes the value in length or in percentage, it also takes
+length value as negative */
+
+p+p{
+    text-indent: 3em;
+    direction: rtl; /*indent the text from right to left*/
+}
+
+/*text indentation is used to display the paragraph or a line properly
+on the web page, by default it adds indentation on the left side
+
+It is used to add some indentation/space generally before the
+beginning of the line
+*/

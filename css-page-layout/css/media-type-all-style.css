@@ -1,0 +1,74 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+/* @media all query is suitable for all device types.*/
+
+h1{
+    color:olivedrab;
+    font-size: 3rem;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+a{
+    margin: 1rem;
+    text-decoration: none;
+    color: seagreen;
+}
+
+p{
+    padding: 1.5rem;
+    margin: 30px 15px;
+    font-size: 1.2rem;
+    background-color: gold;
+    color: brown;
+}
+
+/* By default media type is "all", if not specified. But it's
+better to specify the media type, when working with them.*/
+@media all and (max-width: 400px){
+    h1 {
+            color: orange;
+            font-size: 2rem;        
+        }
+    p{
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+        background-color: #fff;
+    }
+
+    ul{
+        display: inline-block;
+    }
+
+    li{
+        margin-bottom: 15px;
+    }
+
+    div{
+        text-align: center;
+    }
+
+    a{
+        color: #fff;
+    }
+}
+
+/* The media query works just like any other selectors.
+It always takes the bottom selector if the selector has the same
+specificity.
+*/
+
+/* "all" will target all the media types & it is a default media
+type taken by the CSS parser when no media type is specified.*/

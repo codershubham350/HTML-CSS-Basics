@@ -1,0 +1,137 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    height: 100%;
+    width: 600px;
+}
+
+/* Flex Container comprises of 
+align-content, align-items, flex-direction, flex-flow,
+flex-wrap, justify-content
+*/
+
+/* Flex Items comprises of
+align-self, flex, flex-basis, flex-grow, flex-shrink, order*/
+
+.itemA{
+    padding: 2rem;
+    background-color: coral;
+    margin: 10px;
+    /* height: 12vh;
+    font-size: 50px; */
+}
+
+.itemB {
+    padding: 2rem;
+    background-color: dodgerblue;
+    margin: 10px;
+    /* height: 16vh; */
+}
+
+.itemC {
+    padding: 2rem;
+    background-color: crimson;
+    margin: 10px;
+    /* height: 4vh;
+    font-size: 30px; */
+}
+
+.itemD {
+    padding: 2rem;
+    background-color: seagreen;
+    margin: 10px;
+    /* height: 8vh; */
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border: solid 2px;
+    height: 30rem;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap-reverse; */
+    flex-flow: row wrap-reverse;
+}
+
+/*justify-content is used to align container items when the
+items do not use all the available space on the main-axis
+
+justify-content: center; aligns item to the center of the container.
+justify-content: space-around; creates space before starting and after the end of the item.
+justify-content: space-between; creates space between the items.
+justify-content: space-evenly; creates evenly space among items.
+*/
+
+/* align-items this property align items in the vertical axis
+of the flex container
+
+align-items: stretch; it is default property, will stretch the value to fill the container in the vertical axis.
+
+In case user provides height to different items inside
+the flex container then align-items: stretch; will not
+be the default value instead align-items: flex-start; will
+become the default value.
+
+align-items: flex-end; aligns items at the end or bottom of the container
+align-items: center; aligns items to the center of the container
+align-items: baseline; it aligns the flex items along that contents baseline.
+
+In some cases we are not able to distinguish the difference between
+align-items: felx-start; and align-items: baseline; as both
+appears to be same.
+
+Note:- In align-items: baseline; the alignment of item will be determined
+by the tallest item in the row
+*/
+
+/*In flexbox we have other property called flex-direction
+which have 4 properties:
+
+i) column
+ii) column-reverse
+iii) row
+iv) row-reverse
+
+by default flex-direction is set to row.
+flex-direction: row-reverse; aligns the items horizontally in reverse direction.
+flex-direction: column; aligns the items vertically.
+flex-direction: column-reverse; aligns the items vertically in reverse direction.
+*/
+
+/* flex-wrap is used to define whether items should wrap or not
+
+It forces the items to stay in a single line or allows them to
+wrap in multiple lines.
+
+By default it will not allow to wrap and keep the flex items
+in a single row
+Ex:- flex-wrap: nowrap;
+
+If we want to wrap items inside their container we need to
+define flex-wrap as:
+Ex:- flex-wrap: wrap;
+
+flex-wrap: wrap-reverse; will reverse the flow of flex items when they wrap on new line.
+*/
+
+/* flex-flow property is like a shorthand for flex-direction
+and flex-wrap properties
+
+if we want to use flex-direction + flex warp together
+i.e,   flex-direction: row;  flex-wrap: wrap-reverse;
+we can use flex-flow: row wrap-reverse; in simple syntax
+flex-flow: flex-direction flex-wrap;
+*/
+
+/* Difference between flex-start and baseline is that
+when we align items to "flex-start", it will align the items to the
+starting point or edge of the flex container, along the cross axis.
+  But when we give the value "baseline", it will align the flex
+  items along their content's baseline.*/
+
+  /* Difference between align-items and justify-content is that
+  the align-items is going to align the flex items on the cross
+  axis of the container(vertically), whereas the justify-content is going
+  to align the flex items on the main axis(horizontally). */

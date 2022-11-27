@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Valid Invalid Pseudo Class</title>
+    <link rel="stylesheet" href="/pseudo-classes-pseudo-elements/css/input-valid-invalid-style.css">
+</head>
+<body>
+    <!-- pattern attribute is used to give regular expressions,
+    which should match the value entered in the form. -->
+    <!-- pattern attribute only works for input "text" fields not
+    for other fields such as "number" -->
+    <form class="myForm">
+        <label>Name:</label><br/>
+        <input type="text"><br />
+        <label>Email:</label><br />
+        <input type="email"><br />
+        <label>Enter number between 1-10</label><br />
+        <input type="number" pattern="[1-9]">
+    </form>
+</body>
+</html>

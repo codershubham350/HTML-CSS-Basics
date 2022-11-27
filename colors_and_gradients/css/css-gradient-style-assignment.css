@@ -1,0 +1,19 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+    font-size: 1.5em;
+}
+
+article {
+padding: 12em;
+background: linear-gradient(135deg,
+#fec 30%, transparent 25%),
+linear-gradient(225deg,
+        #fec 30%, transparent 25%),
+        linear-gradient(315deg,
+                #fec 30%, transparent 25%),
+                linear-gradient(45deg,
+                        #fec 30%, transparent 25%);
+                        background-color: #f90;
+}
