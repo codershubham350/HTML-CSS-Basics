@@ -1,0 +1,90 @@
+body {
+    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ccc;
+}
+
+/* animation-fill-mode basically controls how the element will 
+look like when the animation starts or after then animation completes */
+
+/* animation-fill-mode have four main values that is:
+forwards, backwards, both and none*/
+
+.myDiv{
+    position: relative;
+    padding: 50px;
+    margin: 60px;
+    width: 0px;
+    border: solid 20px goldenrod;
+    background-color: khaki;
+    /* animation-name: animate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: none;
+    animation-delay: 3s; */
+    /* animation-direction: reverse; */
+    animation: animate 2s ease-in-out 3s forwards infinite;
+}
+
+@keyframes animate {
+    from{
+        left: 0%;
+        background-color: orangered;
+    }
+    to{
+        left: 55%;
+        background-color: darkgreen;
+        transform: rotate(180deg);
+    }
+}
+
+/* 
+   In animation-fill-mode: forwards; // Most common and most useful value//
+// The element will retain the value that we have set in the
+// final keyframe of the animation, so after animation ends it
+// will not reset the styles.
+
+*/
+
+/* Note:- The animation-fill-mode property depends on the
+starting & ending keyframes as well as the animation-direction
+property.*/
+
+/* If user defines the animation-direction: reverse;
+then the animation-fill-mode will work in the reverse direction
+and the element will retain the value of the initial keyframe of animation. */
+
+/* In animation-fill-mode the "forwards" prevents an animated
+element from resetting visually after the animation finishes*/
+
+/* animation-fill-mode: backwards; 
+Starts with the first keyframe style values.
+
+animation-delay sets a time delay until an animation begins,
+and animation-fill-mode will be applied during the delay period.
+
+It adopts the styles from the fisrt keyframe during the delay
+period.
+
+In animation-fill-mode the "backwards" value may be useful
+with more complex animation.
+
+In  animation-direction: reverse; the animation-fill-mode: backwards;
+will amke the element to take on the styles of final keyframe
+of the animation instead of the first keyframe
+*/
+
+/*animation-fill-mode: both; 
+Adops the styles of the first keyframe before the animation
+begins and also adopts the styles of the last keyframe after
+the animation ends.*/
+
+/* animation-fill-mode: none;
+The styles will not applied to the target when the animation is not
+being executed. 
+
+The element instead will displayed using any other css rule applied to it.
+*/
+
+/* animation-fill-mode can help animations look cleaner
+& prevent them from resetting at the end of a sequence.*/
